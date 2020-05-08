@@ -2068,7 +2068,7 @@ input, select, textarea {
 		position: relative;
 		background: #ffffff;
 		border-bottom: solid 1px #ccc;
-		padding: 5em 0 4em 0;
+		padding: 0 0 4em 0;
 		text-align: center;
 	}
 
@@ -2173,14 +2173,14 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/miclogo.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		margin: 0 0 0 0;
 	}
 
 		#banner header {
