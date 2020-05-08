@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Footer from './components/Footer.js';
-import PodBlock from './components/PodBlock.js';
+import PodcastFeed from './functions/PodcastFeed.js';
+
 
 const App = ()=> {
     return (
@@ -94,7 +95,7 @@ const App = ()=> {
                                         <h2>My Portfolio</h2>
                                     </header>
                                     <div className="row">
-                                        <PodBlock />
+                                        <PodcastFeed />
                                         <div className="col-4 col-6-medium col-12-small">
                                             <section className="box">
                                                 <a href="#" className="image featured"><img src="images/pic03.jpg" alt="" /></a>
