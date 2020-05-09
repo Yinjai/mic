@@ -10,15 +10,15 @@ class Home extends Component {
             <div>
                 <section id="header">
                     <h1><Link to="/" className="MIC">Made in Chafford</Link></h1>
-
                     <nav id="nav">
                         <ul>
                             <li className="current"><Link to="/" className="Home">Home</Link></li>
-                            <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                            <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                            <li><a href="no-sidebar.html">No Sidebar</a></li>
+                            <li><a href="left-sidebar.html">Blog</a></li>
+                            <li><a href="right-sidebar.html">Contact</a></li>
+                            <li><a href="no-sidebar.html">About</a></li>
                         </ul>
                     </nav>
+
 
                     <section id="banner">
                         <header>
@@ -30,33 +30,9 @@ class Home extends Component {
                     <section id="intro" className="container">
                         <div className="row">
                             <IntroBlock position="first" logo="fab fa-youtube fa-9x" title="YouTube" description="YouTube" link="https://www.youtube.com/channel/UCvTfkEuNaBnltO8loGct3Ww"/>
-                            <IntroBlock position="middle" logo="fab fa-spotify fa-9x" title="Spotify" description="YouTube" link="https://www.youtube.com/channel/UCvTfkEuNaBnltO8loGct3Ww"/>
-                            <div className="col-4 col-12-medium">
-                                <section className="middle">
-                                    <i className="icon solid featured alt fa-bolt"></i>
-                                    <header>
-                                        <h2>Magna etiam dolor</h2>
-                                    </header>
-                                    <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-                                    <ul className="actions">
-                                        <li><a href="#" className="button  large">Get Started</a></li>
-                                    </ul>
-                                </section>
-                            </div>
-                            <div className="col-4 col-12-medium">
-                                <section className="last">
-                                    <i className="icon solid featured alt2 fa-star"></i>
-                                    <header>
-                                        <h2>Tempus adipiscing</h2>
-                                    </header>
-                                    <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-                                    <ul className="actions">
-                                        <li><a href="#" className="button alt large">Get Started</a></li>
-                                    </ul>
-                                </section>
-                            </div>
+                            <IntroBlock position="middle" logo="fab fa-spotify fa-9x" title="Spotify" description="Spotify" link="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF"/>
+                            <IntroBlock position="last" logo="fab fa-soundcloud fa-9x" title="Soundcloud" description="Soundcloud" link="https://soundcloud.com/madeinchafford"/>
                         </div>
-                        
                     </section>
 
                 </section>

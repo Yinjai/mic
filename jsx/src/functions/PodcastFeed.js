@@ -14,7 +14,7 @@ function PodcastFeed () {
             const response = await axios.get(corsUrl);
             setListings(response.data.items);
             setData(response.data.feed);
-            console.log(response.data.feed);
+            console.log(response.data);
         } catch (ex) {
             console.log(ex);
         }
@@ -28,10 +28,10 @@ function PodcastFeed () {
     });
 
     return(
-        listings.map((l, i) => {
+        listings.slice(0,6).map((l, i) => {
             return (
                 <PodBlock 
-                    key={i} 
+                    index={i} 
                     title={l.title}
                     description={l.description}
                     thumbnail={l.thumbnail}

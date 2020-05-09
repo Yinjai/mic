@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class PodBlock extends Component {
 
@@ -14,7 +15,7 @@ class PodBlock extends Component {
                     <p>{this.props.description}</p>
                     <footer>
                         <ul className="actions">
-                            <li><a href="#" className="button alt">Find out more</a></li>
+                            <li><Link to={`/episode/${this.props.index}`} className="button alt">Listen Now</Link></li>
                         </ul>
                     </footer>
                 </section>
