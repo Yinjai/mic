@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PodcastFeed from '../functions/PodcastFeed.js';
+import { Link } from 'react-router-dom';
+import IntroBlock from './IntroBlock.js';
 
 class Home extends Component {
 
@@ -7,11 +9,11 @@ class Home extends Component {
         return(
             <div>
                 <section id="header">
-                    <h1><a href="index.html">Made in Chafford</a></h1>
+                    <h1><Link to="/" className="MIC">Made in Chafford</Link></h1>
 
                     <nav id="nav">
                         <ul>
-                            <li className="current"><a href="index.html">Home</a></li>
+                            <li className="current"><Link to="/" className="Home">Home</Link></li>
                             <li><a href="left-sidebar.html">Left Sidebar</a></li>
                             <li><a href="right-sidebar.html">Right Sidebar</a></li>
                             <li><a href="no-sidebar.html">No Sidebar</a></li>
@@ -27,15 +29,8 @@ class Home extends Component {
 
                     <section id="intro" className="container">
                         <div className="row">
-                            <div className="col-4 col-12-medium">
-                                <section className="first">
-                                    <i className="icon solid featured fa-cog"></i>
-                                    <header>
-                                        <h2>Ipsum consequat</h2>
-                                    </header>
-                                    <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
-                                </section>
-                            </div>
+                            <IntroBlock position="first" logo="fab fa-youtube fa-9x" title="YouTube" description="YouTube" link="https://www.youtube.com/channel/UCvTfkEuNaBnltO8loGct3Ww"/>
+                            <IntroBlock position="middle" logo="fab fa-spotify fa-9x" title="Spotify" description="YouTube" link="https://www.youtube.com/channel/UCvTfkEuNaBnltO8loGct3Ww"/>
                             <div className="col-4 col-12-medium">
                                 <section className="middle">
                                     <i className="icon solid featured alt fa-bolt"></i>
@@ -43,6 +38,9 @@ class Home extends Component {
                                         <h2>Magna etiam dolor</h2>
                                     </header>
                                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                                    <ul className="actions">
+                                        <li><a href="#" className="button  large">Get Started</a></li>
+                                    </ul>
                                 </section>
                             </div>
                             <div className="col-4 col-12-medium">
@@ -52,15 +50,13 @@ class Home extends Component {
                                         <h2>Tempus adipiscing</h2>
                                     </header>
                                     <p>Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.</p>
+                                    <ul className="actions">
+                                        <li><a href="#" className="button alt large">Get Started</a></li>
+                                    </ul>
                                 </section>
                             </div>
                         </div>
-                        <footer>
-                            <ul className="actions">
-                                <li><a href="#" className="button large">Get Started</a></li>
-                                <li><a href="#" className="button alt large">Learn More</a></li>
-                            </ul>
-                        </footer>
+                        
                     </section>
 
                 </section>
@@ -72,80 +68,10 @@ class Home extends Component {
 
                                 <section>
                                     <header className="major">
-                                        <h2>My Portfolio</h2>
+                                        <h2>Episodes</h2>
                                     </header>
                                     <div className="row">
                                         <PodcastFeed />
-                                        <div className="col-4 col-6-medium col-12-small">
-                                            <section className="box">
-                                                <a href="#" className="image featured"><img src="images/pic03.jpg" alt="" /></a>
-                                                <header>
-                                                    <h3>Sed etiam lorem nulla</h3>
-                                                </header>
-                                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                                                <footer>
-                                                    <ul className="actions">
-                                                        <li><a href="#" className="button alt">Find out more</a></li>
-                                                    </ul>
-                                                </footer>
-                                            </section>
-                                        </div>
-                                        <div className="col-4 col-6-medium col-12-small">
-                                            <section className="box">
-                                                <a href="#" className="image featured"><img src="images/pic04.jpg" alt="" /></a>
-                                                <header>
-                                                    <h3>Consequat et tempus</h3>
-                                                </header>
-                                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                                                <footer>
-                                                    <ul className="actions">
-                                                        <li><a href="#" className="button alt">Find out more</a></li>
-                                                    </ul>
-                                                </footer>
-                                            </section>
-                                        </div>
-                                        <div className="col-4 col-6-medium col-12-small">
-                                            <section className="box">
-                                                <a href="#" className="image featured"><img src="images/pic05.jpg" alt="" /></a>
-                                                <header>
-                                                    <h3>Blandit sed adipiscing</h3>
-                                                </header>
-                                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                                                <footer>
-                                                    <ul className="actions">
-                                                        <li><a href="#" className="button alt">Find out more</a></li>
-                                                    </ul>
-                                                </footer>
-                                            </section>
-                                        </div>
-                                        <div className="col-4 col-6-medium col-12-small">
-                                            <section className="box">
-                                                <a href="#" className="image featured"><img src="images/pic06.jpg" alt="" /></a>
-                                                <header>
-                                                    <h3>Etiam nisl consequat</h3>
-                                                </header>
-                                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                                                <footer>
-                                                    <ul className="actions">
-                                                        <li><a href="#" className="button alt">Find out more</a></li>
-                                                    </ul>
-                                                </footer>
-                                            </section>
-                                        </div>
-                                        <div className="col-4 col-6-medium col-12-small">
-                                            <section className="box">
-                                                <a href="#" className="image featured"><img src="images/pic07.jpg" alt="" /></a>
-                                                <header>
-                                                    <h3>Dolore nisl feugiat</h3>
-                                                </header>
-                                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-                                                <footer>
-                                                    <ul className="actions">
-                                                        <li><a href="#" className="button alt">Find out more</a></li>
-                                                    </ul>
-                                                </footer>
-                                            </section>
-                                        </div>
                                     </div>
                                 </section>
 
