@@ -6,7 +6,6 @@ import EpisodePage from './components/EpisodePage.js';
 import { BrowserRouter, Route } from 'react-router-dom';
 import ScrollToTop from './functions/ScrollToTop.js';
 
-
 const App = ()=> {
     return (
         <div id="page-wrapper">

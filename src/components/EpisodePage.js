@@ -7,13 +7,8 @@ class EpisodePage extends Component {
     render() {
         return(
             <div>
-           
-				<section id="header">
-
-					
+				<section id="header">					
 						<h1><Link to="/" className="MIC">Made in Chafford</Link></h1>
-
-				
 						<nav id="nav">
 							<ul>
 								<li><Link to="/" className="Home">Home</Link></li>
@@ -35,7 +30,7 @@ class EpisodePage extends Component {
 									<p>Lorem ipsum dolor sit amet feugiat</p>
 								</header>
 								<p>
-                                    <SoundCloudBlock />
+                                    <SoundCloudBlock index={this.props.location.pathname.split('episode/').pop()} />
 									Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
 									hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
 									Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.

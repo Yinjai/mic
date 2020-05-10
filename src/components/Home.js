@@ -47,7 +47,7 @@ class Home extends Component {
                                         <h2>Episodes</h2>
                                     </header>
                                     <div className="row">
-                                        <PodcastFeed />
+                                        <PodcastFeed state={this.props}/>
                                     </div>
                                 </section>
 

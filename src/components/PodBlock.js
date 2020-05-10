@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+
 class PodBlock extends Component {
 
     render() {
@@ -15,7 +16,7 @@ class PodBlock extends Component {
                     <p>{this.props.description}</p>
                     <footer>
                         <ul className="actions">
-                            <li><Link to={`/episode/${this.props.index}`} className="button alt">Listen Now</Link></li>
+                            <li><Link to={{pathname:`/episode/${this.props.index}`, index: this.props.index}} className="button alt" >Listen Now</Link></li>
                         </ul>
                     </footer>
                 </section>
@@ -23,5 +24,4 @@ class PodBlock extends Component {
         )
     }
 }
-
 export default PodBlock

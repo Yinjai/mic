@@ -31,7 +31,7 @@ function PodcastFeed () {
         listings.slice(0,6).map((l, i) => {
             return (
                 <PodBlock 
-                    index={i} 
+                    index={l.guid.split('tracks/').pop()} 
                     key={i} 
                     title={l.title}
                     description={l.description}
