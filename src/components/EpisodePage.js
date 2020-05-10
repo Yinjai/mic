@@ -5,6 +5,7 @@ import SoundCloudBlock from './SoundCloudBlock.js';
 class EpisodePage extends Component {
 
     render() {
+		console.log(this.props.match)
         return(
             <div>
 				<section id="header">					
@@ -12,9 +13,9 @@ class EpisodePage extends Component {
 						<nav id="nav">
 							<ul>
 								<li><Link to="/" className="Home">Home</Link></li>
+								<li className="current"><a href="no-sidebar.html">Episodes</a></li>
 								<li><a href="left-sidebar.html">Left Sidebar</a></li>
 								<li><a href="right-sidebar.html">Right Sidebar</a></li>
-								<li className="current"><a href="no-sidebar.html">No Sidebar</a></li>
 							</ul>
 						</nav>
 
@@ -26,7 +27,7 @@ class EpisodePage extends Component {
 							<article className="box post">
 								<a href="#" className="image featured"><img src="/images/pic01.jpg" alt="" /></a>
 								<header>
-									<h2>No Sidebar</h2>
+									<h2>Currently Listening</h2>
 									<p>Lorem ipsum dolor sit amet feugiat</p>
 								</header>
 								<p>
