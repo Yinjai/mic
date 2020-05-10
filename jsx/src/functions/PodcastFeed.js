@@ -32,6 +32,7 @@ function PodcastFeed () {
             return (
                 <PodBlock 
                     index={i} 
+                    key={i} 
                     title={l.title}
                     description={l.description}
                     thumbnail={l.thumbnail}
