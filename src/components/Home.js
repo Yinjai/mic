@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PodcastFeed from '../functions/PodcastFeed.js';
 import { Link } from 'react-router-dom';
 import IntroBlock from './IntroBlock.js';
+import PodBlock from '../components/PodBlock';
 
 class Home extends Component {
 
@@ -47,7 +48,7 @@ class Home extends Component {
                                         <h2>Episodes</h2>
                                     </header>
                                     <div className="row">
-                                        <PodcastFeed state={this.props}/>
+                                        <PodcastFeed state={this.props} />
                                     </div>
                                 </section>
 
