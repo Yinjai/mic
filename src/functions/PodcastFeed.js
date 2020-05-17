@@ -15,9 +15,6 @@ function PodcastFeed (props) {
             const response = await axios.get(corsUrl);
             setListings(response.data.items);
             setData(response.data.feed);
-            console.log(response.data);
-            
-            console.log(props)
         } catch (ex) {
             console.log(ex);
         }
@@ -30,9 +27,19 @@ function PodcastFeed (props) {
         }
     });
 
-    if(props.variant==='single') {
+    if(props.variant==="single") {
+        const episodeInfo = listings.filter(listings => listings.guid.split('tracks/').pop() === props.episodeId);
         return(
-           <EpisodeInfoBlock />
+            episodeInfo.map((l, i) => {
+                return(
+                    <EpisodeInfoBlock
+                        key={i} 
+                        title={l.title}
+                        description={l.description}
+                        pubDate={l.pubDate}
+                    />
+                )
+            })
         )
     } else {
         return(
