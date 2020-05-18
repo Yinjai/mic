@@ -3,5 +3,11 @@
 }
 
 #header.headerNoPadding {
-    padding: 0 0 3em 0;
+    padding: 0 0 0 0;
+}
+
+.footerSection {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
 }
