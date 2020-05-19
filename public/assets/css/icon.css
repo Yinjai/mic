@@ -11,7 +11,15 @@ ul.social li a.fa-instagram {
 }
 
 ul.social li a.fa-instagram:hover {
-    background: #d4477b;
+    background: #ff7e93;
+}
+
+ul.social li a.fa-facebook-f {
+    background: #4267B2;
+}
+
+ul.social li a.fa-facebook-f:hover {
+    background: rgb(98, 127, 185);
 }
 
 .spotifyPodcastsImage {

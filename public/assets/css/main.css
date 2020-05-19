@@ -2332,6 +2332,12 @@ input, select, textarea {
 				font-size: 1.75em;
 			}
 
+		.footerSection {
+			text-align: center;
+			width: 50%;
+			margin: 0 auto;
+		}
+
 /* Copyright */
 
 	#copyright {
@@ -2440,6 +2446,8 @@ input, select, textarea {
 					#footer header h2 {
 						font-size: 1.25em;
 					}
+
+
 
 		/* Copyright */
 
@@ -2902,6 +2910,10 @@ input, select, textarea {
 
 			#footer {
 				padding: 40px 0 20px 0;
+			}
+			
+			.footerSection {
+				width: auto;
 			}
 
 	}
