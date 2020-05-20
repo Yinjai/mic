@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import IntroBlock from './IntroBlock.js';
 import Episodes from './Episodes.js';
-import Header from './Header.js';
-import { Link } from 'react-router-dom';
 
 class Home extends Component {
 
