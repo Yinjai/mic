@@ -7,6 +7,7 @@ import Episodes from './components/Episodes.js';
 import Header from './components/Header.js';
 import { BrowserRouter, Route } from 'react-router-dom';
 import ScrollToTop from './functions/ScrollToTop.js';
+import MICPlaylist from './components/MICPlaylist.js';
 
 const App = ()=> {
     return (
@@ -16,7 +17,8 @@ const App = ()=> {
                 <Header />
                 <Route path="/" exact component={Home} />
                 <Route path="/episodes" component={Episodes} />
-                <Route path="/episode/:episodeId" component={EpisodePage} />                    
+                <Route path="/episode/:episodeId" component={EpisodePage} />      
+                <Route path="/micplaylist" component={MICPlaylist} />              
             </BrowserRouter>
             <Footer />
         </div>
