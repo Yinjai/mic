@@ -19,7 +19,7 @@ class EpisodePage extends Component {
 						</p>
 						<p className="podcastLinks">
 							<a className ="spotifyPodcasts" target="_blank" href="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF">
-								<img className ="spotifyPodcastsImage"src="/images/spotifylisten.webp" alt="" />
+								<img className ="spotifyPodcastsImage"src="/images/spotifylisten.jpg" alt="" />
 							</a>
 							<a className ="applePodcasts" target="_blank" href="https://podcasts.apple.com/gb/podcast/made-in-chafford/id1235162230">
 								<img className ="applePodcastsImage" src="/images/applelisten.svg" alt="" />
