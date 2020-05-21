@@ -17,9 +17,9 @@ class Home extends Component {
 
                     <section id="intro" className="container">
                         <div className="row">
-                            <IntroBlock position="first" logo="fab fa-youtube fa-9x" title="YouTube" description="YouTube" link="https://www.youtube.com/channel/UCvTfkEuNaBnltO8loGct3Ww"/>
-                            <IntroBlock position="middle" logo="fab fa-spotify fa-9x" title="Spotify" description="Spotify" link="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF"/>
-                            <IntroBlock position="last" logo="fab fa-soundcloud fa-9x" title="Soundcloud" description="Soundcloud" link="https://soundcloud.com/madeinchafford"/>
+                            <IntroBlock position="first" logo="fab fa-youtube fa-9x" title="YouTube" link="https://www.youtube.com/channel/UCvTfkEuNaBnltO8loGct3Ww"/>
+                            <IntroBlock position="middle" logo="fab fa-spotify fa-9x" title="Spotify" link="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF"/>
+                            <IntroBlock position="last" logo="fab fa-soundcloud fa-9x" title="Soundcloud" link="https://soundcloud.com/madeinchafford"/>
                         </div>
                     </section>
                 </section>

@@ -37,6 +37,8 @@ function PodcastFeed (props) {
                         title={l.title}
                         description={l.description}
                         pubDate={l.pubDate}
+                        thumbnail={l.thumbnail}
+                        episodeId={props.episodeId}
                     />
                 )
             })

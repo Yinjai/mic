@@ -1536,6 +1536,7 @@ input, select, textarea {
 
 	header {
 		margin: 0 0 1.5em 0;
+		
 	}
 
 		header > p {
@@ -2067,7 +2068,6 @@ input, select, textarea {
 	#header {
 		position: relative;
 		background: #ffffff;
-		border-bottom: solid 1px #ccc;
 		padding: 5em 0 4em 0;
 		text-align: center;
 	}
@@ -2185,8 +2185,10 @@ input, select, textarea {
 		#banner header {
 			background-color: rgba(34, 30, 31, 0.98);
 			display: inline-block;
+			position: relative;
 			padding: 2.5em 5em;
 			border-radius: 5px;
+			top: 150px;
 		}
 
 			#banner header h2 {
@@ -2364,6 +2366,9 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			#banner header {
+				top: 128px;
+			}
 	}
 
 /* Large */
@@ -2403,6 +2408,10 @@ input, select, textarea {
 			#banner {
 				padding: 6em 0;
 				margin: 3em 0 0 0;
+			}
+			
+			#banner header {
+				top: 88px;
 			}
 
 		/* Intro */
