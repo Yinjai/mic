@@ -8,16 +8,16 @@ class PodBlock extends Component {
         return(
             <div className="col-4 col-6-medium col-12-small">
                 <section className="box">
-                    <a href="#" className="image featured"><img src={this.props.thumbnail} alt="" /></a>
+                    <Link className="image featured" to={{pathname:`/episode/${this.props.index}`, index: this.props.index}}>
+                        <img src={this.props.thumbnail} alt="" />
+                    </Link>
                     <header>
                         <h3>{this.props.title}</h3>
                     </header>
 
                     <p>{this.props.description}</p>
-                    <footer>
-                        <ul className="actions">
-                            <li><Link to={{pathname:`/episode/${this.props.index}`, index: this.props.index}} className="button alt" >Listen Now</Link></li>
-                        </ul>
+                    <footer className="blockLinks">
+                        <Link className="actions" to={{pathname:`/episode/${this.props.index}`, index: this.props.index}} className="button alt" >Listen Now</Link>
                     </footer>
                 </section>
             </div>

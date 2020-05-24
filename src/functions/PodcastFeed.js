@@ -10,7 +10,7 @@ function PodcastFeed (props) {
     const [listings, setListings] = useState([]);
     const [data, setData]  = useState({});
        
-    const getListings = async url => {
+    const getListings = async () => {
         try {
             const response = await axios.get(corsUrl);
             setListings(response.data.items);

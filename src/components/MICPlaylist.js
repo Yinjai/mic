@@ -8,7 +8,7 @@ class MICPlaylist extends Component {
 			<section id="main">
 				<div className="container">
 					<article className="box post">
-						<a href="#" className="image featured"><img src="/images/pic01.jpg" alt="" /></a>
+						{/* <a href="#" className="image featured"><img src="/images/pic01.jpg" alt="" /></a> */}
 						<header>
 							<h2>Currently listening to</h2>
 							<p></p>

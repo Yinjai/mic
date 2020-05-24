@@ -9,7 +9,7 @@ class EpisodePage extends Component {
 			<section id="main">
 				<div className="container">
 					<article className="box post">
-						<header>
+						<header className="episodeHeader">
 							<h2>Currently listening to</h2>
 							<p></p>
 						</header>
