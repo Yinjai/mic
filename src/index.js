@@ -10,8 +10,9 @@ import ScrollToTop from './functions/ScrollToTop.js';
 import MICPlaylist from './components/MICPlaylist.js';
 
 const App = ()=> {
+
     return (
-        <div id="page-wrapper">
+        <div id="page-wrapper" style={{height: '100%'}}>
             <BrowserRouter>
                 <ScrollToTop />
                 <Header />

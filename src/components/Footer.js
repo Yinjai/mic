@@ -19,16 +19,10 @@ class Footer extends Component {
                                         <h3>Enquiries</h3>
                                         <p><a href="mailto:madeinchafford@gmail.com">madeinchafford@gmail.com</a></p>
                                     </li>
-                                    <li>
-                                        <h3>Phone</h3>
-                                        <p>(800) 000-0000</p>
-                                    </li>
                                 </ul>
                             </section>
                         </div>
                         <div className="col-12">
-
-
                                 <div id="copyright">
                                     <ul className="links">
                                         <li>&copy; Made in Chafford. All rights reserved.</li>
