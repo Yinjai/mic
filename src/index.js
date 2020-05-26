@@ -8,6 +8,7 @@ import Header from './components/Header.js';
 import { BrowserRouter, Route } from 'react-router-dom';
 import ScrollToTop from './functions/ScrollToTop.js';
 import MICPlaylist from './components/MICPlaylist.js';
+import About from './components/About.js';
 
 const App = ()=> {
 
@@ -19,7 +20,8 @@ const App = ()=> {
                 <Route path="/" exact component={Home} />
                 <Route path="/episodes" component={Episodes} />
                 <Route path="/episode/:episodeId" component={EpisodePage} />      
-                <Route path="/micplaylist" component={MICPlaylist} />              
+                <Route path="/micplaylist" component={MICPlaylist} />
+                <Route path="/about" component={About} />                    
             </BrowserRouter>
             <Footer />
         </div>

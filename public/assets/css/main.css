@@ -2184,13 +2184,13 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/miclogo.jpg");
-		background-position: center center;
-		background-size: auto 100%;
+		background: #CCE8F4 url("../../images/micbanner.jpg");
+		background-position: 0% 15%;
+		background-size: 100% auto;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		padding: 8em 0;
+		padding: 12em 0;
 		margin: 0 0 0 0;
 	}
 
@@ -2200,7 +2200,7 @@ input, select, textarea {
 			position: relative;
 			padding: 2.5em 5em;
 			border-radius: 5px;
-			top: 150px;
+			top: 224px;
 		}
 
 			#banner header h2 {
@@ -2379,7 +2379,7 @@ input, select, textarea {
 			}
 
 			#banner header {
-				top: 128px;
+				top: 192px;
 			}
 	}
 
@@ -2420,10 +2420,11 @@ input, select, textarea {
 			#banner {
 				padding: 6em 0;
 				margin: 3em 0 0 0;
+				padding: 12em 0;
 			}
 			
 			#banner header {
-				top: 88px;
+				top: 176px;
 			}
 
 		/* Intro */
@@ -2901,7 +2902,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
+				padding: 7em 0;
 				margin: 2em 0 0 0;
 			}
 
@@ -2909,6 +2910,7 @@ input, select, textarea {
 					padding: 1.5em 1em 1.5em 1em;
 					display: block;
 					border-radius: 0;
+					top: 103px;
 				}
 
 					#banner header h2 {
@@ -2938,3 +2940,18 @@ input, select, textarea {
 			}
 
 	}
+	
+@media screen and (max-width: 375px) {
+	#banner {
+		background-position: 0% 0%;
+		padding: 12em 0;
+		margin: 2em 0 0 0;
+	}
+
+		#banner header {
+			padding: 1.5em 1em 1.5em 1em;
+			display: block;
+			border-radius: 0;
+			top: 198px;
+		}
+}
