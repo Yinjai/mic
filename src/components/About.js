@@ -17,6 +17,18 @@ class About extends Component {
         }
     }
 
+    onNameChange(event) {
+        this.setState({name: event.target.value})
+    }
+
+    onEmailChange(event) {
+        this.setState({email: event.target.value})
+    }
+
+    onMessageChange(event) {
+        this.setState({message: event.target.value})
+    }
+
    handleSubmit = e => {
       fetch("/", {
         method: "POST",
@@ -31,6 +43,10 @@ class About extends Component {
 
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
+    resetForm(){
+        this.setState({name: '', email: '', message: ''})
+    }
+
     render() {
         const { name, email, message } = this.state;
         return(
@@ -40,15 +56,15 @@ class About extends Component {
                         <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" className="form-control" value={name} onChange={this.handleChange} />
+                                <input type="text" className="form-control" value={name} onChange={this.onNameChange.bind(this)} />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="exampleInputEmail1">Email address</label>
-                                <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={this.handleChange} />
+                                <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={this.onEmailChange.bind(this)} />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Message</label>
-                                <textarea className="form-control" rows="5" value={message} onChange={this.handleChange} />
+                                <textarea className="form-control" rows="5" value={message} onChange={this.onMessageChange.bind(this)} />
                             </div>
                             <button type="submit" className="btn btn-primary">Submit</button>
                         </form>
