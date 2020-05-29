@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 class About extends Component {
 
     constructor(props) {
@@ -11,63 +17,38 @@ class About extends Component {
         }
     }
 
-    onNameChange(event) {
-        this.setState({name: event.target.value})
-    }
+   handleSubmit = e => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
+      })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
 
-    onEmailChange(event) {
-        this.setState({email: event.target.value})
-    }
+      e.preventDefault();
+    };
 
-    onMessageChange(event) {
-        this.setState({message: event.target.value})
-    }
-
-    handleSubmit(e) {
-        e.preventDefault();
-
-        fetch('http://localhost:3000/send', 
-            { 
-                method: "POST",
-                body: JSON.stringify(this.state),
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                }
-            }).then((response) => (response.json())).then((response)=> {
-                if (response.status === 'success') {
-                    alert("Message Sent."); 
-                    this.resetForm()
-                }
-                else if (response.status === 'fail') {
-                    alert("Message failed to send.")
-                }
-            }
-        )
-    }
-
-    resetForm(){
-        this.setState({name: '', email: '', message: ''})
-    }
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     render() {
+        const { name, email, message } = this.state;
         return(
 			<section id="main">
 				<div className="container">
 					<article className="box post">
-                        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                        <input type="hidden" name="form-name" value="contact" />
+                        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+                                <input type="text" className="form-control" value={name} onChange={this.handleChange} />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="exampleInputEmail1">Email address</label>
-                                <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+                                <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={this.handleChange} />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="message">Message</label>
-                                <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+                                <textarea className="form-control" rows="5" value={message} onChange={this.handleChange} />
                             </div>
                             <button type="submit" className="btn btn-primary">Submit</button>
                         </form>
