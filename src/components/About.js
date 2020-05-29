@@ -55,7 +55,7 @@ class About extends Component {
 			<section id="main">
 				<div className="container">
 					<article className="box post">
-                        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" data-netlify="true">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
                                 <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
