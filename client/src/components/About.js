@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-}
-
 class About extends Component {
 
     constructor(props) {
@@ -34,17 +28,20 @@ class About extends Component {
         e.preventDefault();
         axios({
           method: "POST", 
-          url:"http://localhost:3001/send", 
+          url:"/send", 
           data:  this.state
-        }).then((response)=>{
-          if (response.data.status === 'success'){
-            alert("Message Sent."); 
-            this.resetForm()
-          }else if(response.data.status === 'fail'){
-            alert("Message failed to send.")
-          }
+        }).then((res) => {
+            if(res.status === 200) {
+                alert("Enquiry Sent."); 
+                this.resetForm();
+            }
+            else {
+                alert("Failed to send. Please try again.")
+            }
+        }).catch(err => {
+            console.log(err)
         })
-      }
+    }
 
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 

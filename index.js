@@ -5,6 +5,7 @@ const app = express()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.json())
 
 app.post('/send', (req, res) => {
     nodemailer.createTestAccount((err, account) => {
@@ -19,7 +20,7 @@ app.post('/send', (req, res) => {
         `
 
         let transporter = nodemailer.createTransport({
-            host: 'smtp.ethereal.email', // Don’t forget to replace with the SMTP host of your provider
+            host: 'smtp.ethereal.email', 
             port: 587,
             auth: {
                 user: "elenora.kulas@ethereal.email",
@@ -29,7 +30,7 @@ app.post('/send', (req, res) => {
 
         let mailOptions = {
             from: 'test@testaccount.com',
-            to: 'elenora.kulas@ethereal.email',  // Change to email address that you want to receive messages on
+            to: 'elenora.kulas@ethereal.email',  
             subject: 'New Message from Contact Form',
             replyTo: 'test@testaccount.com',
             subject: "New message",
@@ -41,10 +42,11 @@ app.post('/send', (req, res) => {
             if(err) {
                 return console.log(err)
             }
-            console.log("Message sent: %s", info.message)
+            console.log("Message sent: %s", info)
             console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
         })
     })
+    res.send("message sent here");
 })
 
 const PORT = process.env.PORT || 3001
