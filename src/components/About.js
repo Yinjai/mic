@@ -35,7 +35,10 @@ class About extends Component {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...this.state })
       })
-        .then(() => alert("Success!"))
+        .then(() => {
+            alert("Success!")
+            this.resetForm()
+        })
         .catch(error => alert(error));
 
       e.preventDefault();
