@@ -51,6 +51,13 @@ router.post('/send', (req, res) => {
     res.send("message sent here");
 })
 
+router.get('/test', (req, res) => {
+    
+    res.json({
+        'hello': 'hi!'
+    });
+})
+
 
 app.use('/.netlify/functions/index', router);
 
