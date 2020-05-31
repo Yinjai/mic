@@ -40,7 +40,7 @@ router.post('/send', (req, res) => {
     }
 
     transporter.sendMail(mailOptions, (err, info) => {
-        
+
         if(err) {
             return console.log(err)
         }
@@ -48,7 +48,7 @@ router.post('/send', (req, res) => {
         console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
     });
     
-    res.send("message sent here");
+    res.send(info);
 })
 
 app.use('/.netlify/functions/index', router);
