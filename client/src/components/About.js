@@ -29,7 +29,8 @@ class About extends Component {
         axios({
           method: "POST", 
           url:"/.netlify/functions/index/send", 
-          data:  this.state
+          data:  this.state,
+          body: JSON.stringify(this.state),
         }).then((res) => {
             if(res.status === 200) {
                 console.log(res);
