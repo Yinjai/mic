@@ -22,7 +22,9 @@
     "start:lambda": "netlify-lambda serve .",
     "build": "run-p build:**",
     "build:app": "npm run build --prefix client",
-    "build:lambda": "netlify-lambda build ."
+    "build:lambda": "netlify-lambda build .",
+    "deploy:draft": "netlify deploy --dir=client/build --functions=functions",
+    "deploy:prod": "netlify deploy --dir=client/build --functions=functions --prod"
   },
   "repository": {
     "type": "git",
