@@ -1,0 +1,37 @@
+.fa-spotify {
+    color: #1ED761;
+}
+
+.fa-soundcloud {
+    color: #ff7700;
+}
+
+ul.social li a.fa-instagram {
+    background: #fb3958;
+}
+
+ul.social li a.fa-instagram:hover {
+    background: #ff7e93;
+}
+
+ul.social li a.fa-facebook-f {
+    background: #4267B2;
+}
+
+ul.social li a.fa-facebook-f:hover {
+    background: rgb(98, 127, 185);
+}
+
+.spotifyPodcastsImage {
+    width: 164.84px;
+    height: 60.98px;
+}
+
+.applePodcastsImage {
+    width: 164.84px;
+    height: 60.98px;
+}
+
+.podcastLinks {
+    text-align: center;
+}
