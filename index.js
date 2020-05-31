@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.post('/.netlify/functions/index/send', (req, res) => {
+router.post('/send', (req, res) => {
     const htmlEmail = `
         <h3>Contact Details</h3>
         <ul>
@@ -46,13 +46,12 @@ app.post('/.netlify/functions/index/send', (req, res) => {
         }
         console.log("Message sent: %s", info)
         console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
-        res.sendStatus(200)
     });
 
     res.send("Message send");
 })
 
-// app.use('/.netlify/functions/index', router);
+app.use('/.netlify/functions/index', router);
 
 const PORT = process.env.PORT || 3001
 
