@@ -48,7 +48,7 @@ router.post('/send', (req, res) => {
         console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
     });
     
-    res.send(""+info);
+    res.send("a");
 })
 
 app.use('/.netlify/functions/index', router);
