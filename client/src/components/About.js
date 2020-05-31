@@ -28,7 +28,7 @@ class About extends Component {
         e.preventDefault();
         axios({
           method: "POST", 
-          url:"/.netlify/functions/index/send", 
+          url:"/send", 
           data:  this.state
         }).then((res) => {
             if(res.status === 200) {
