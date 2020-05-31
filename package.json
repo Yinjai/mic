@@ -22,10 +22,7 @@
     "start:lambda": "netlify-lambda serve .",
     "build": "run-p build:**",
     "build:app": "npm run build --prefix client",
-    "build:lambda": "netlify-lambda build .",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "build:lambda": "netlify-lambda build ."
   },
   "repository": {
     "type": "git",
