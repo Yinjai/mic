@@ -46,11 +46,11 @@ router.post('/send', (req, res) => {
         }
         console.log("Message sent: %s", info)
         console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
-    });
 
-    res.send(
-        `I received your POST request. This is what you sent me: ${transporter}`,
-    );
+        res.send(
+            nodemailer.getTestMessageUrl(info)
+        );
+    });
 })
 
 router.post('/api/world', (req, res) => {

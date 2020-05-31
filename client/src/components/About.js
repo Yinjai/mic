@@ -32,7 +32,7 @@ class About extends Component {
           data:  this.state,
         }).then((res) => {
             if(res.status === 200) {
-                console.log(res);
+                console.log(res.data);
                 alert("Enquiry Sent."); 
                 this.resetForm();
             }
