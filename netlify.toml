@@ -4,9 +4,5 @@
 
 [[redirects]]
     from = "/*"
-    to = "/index.html"
+    to = "/.netlify/functions/index/:splat"
     status = 200
-
-[context.production]
- publish = "client/build"
- command = "npm run build"
