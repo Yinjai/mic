@@ -53,11 +53,5 @@ router.post('/send', (req, res) => {
 
 app.use('/.netlify/functions/index', router);
 
-const PORT = process.env.PORT || 3001
-
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
-})
-
 module.exports = app;
 module.exports.handler = serverless(app);
