@@ -30,7 +30,6 @@ class About extends Component {
           method: "POST", 
           url:"/.netlify/functions/index/send", 
           data:  this.state,
-          body: JSON.stringify(this.state),
         }).then((res) => {
             if(res.status === 200) {
                 console.log(res);

@@ -46,6 +46,7 @@ router.post('/send', (req, res) => {
         }
         console.log("Message sent: %s", info)
         console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
+        res.sendStatus(200)
     });
 
     res.send("Message send");
