@@ -24,15 +24,15 @@ class About extends Component {
         this.setState({message: event.target.value})
     }
 
-    handleSubmit(e){
+    async handleSubmit(e){
         e.preventDefault();
-        axios({
+        await axios({
           method: "POST", 
           url:"/.netlify/functions/index/send", 
           data:  this.state,
         }).then((res) => {
             if(res.status === 200) {
-                console.log(res);
+                console.log(`here ${res}`);
                 alert("Enquiry Sent."); 
                 this.resetForm();
             }
@@ -43,7 +43,7 @@ class About extends Component {
             console.log(err)
         })
     }
-
+    
     handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
     resetForm(){

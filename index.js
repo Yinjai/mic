@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
 router.post('/send', (req, res) => {
-    console.log("here")
     const htmlEmail = `
         <h3>Contact Details</h3>
         <ul>
@@ -49,16 +48,18 @@ router.post('/send', (req, res) => {
         console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
     });
 
-    res.send("Message sent");
+    res.send(
+        `I received your POST request. This is what you sent me: ${transporter}`,
+    );
 })
+
+router.post('/api/world', (req, res) => {
+    res.send(
+      `I received your POST request. This is what you sent me: ${req.body.name}`,
+    );
+});
 
 app.use('/.netlify/functions/index', router);
-
-const PORT = process.env.PORT || 3001
-
-app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`);
-})
 
 module.exports = app;
 module.exports.handler = serverless(app);
