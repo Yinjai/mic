@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
-router.post('/send', (req, res) => {
+app.post('/.netlify/functions/index/send', (req, res) => {
     const htmlEmail = `
         <h3>Contact Details</h3>
         <ul>
@@ -52,7 +52,7 @@ router.post('/send', (req, res) => {
     res.send("Message send");
 })
 
-app.use('/.netlify/functions/index', router);
+// app.use('/.netlify/functions/index', router);
 
 const PORT = process.env.PORT || 3001
 
