@@ -51,14 +51,6 @@ router.post('/send', (req, res) => {
     res.send("message sent here");
 })
 
-router.get('/test', (req, res) => {
-    
-    res.json({
-        'hello': 'hi there!'
-    });
-})
-
-
 app.use('/.netlify/functions/index', router);
 
 const PORT = process.env.PORT || 3001

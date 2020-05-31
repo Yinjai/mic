@@ -24,30 +24,11 @@ class About extends Component {
         this.setState({message: event.target.value})
     }
 
-    // handleSubmit(e){
-    //     e.preventDefault();
-    //     axios({
-    //       method: "POST", 
-    //       url:"/send", 
-    //       data:  this.state
-    //     }).then((res) => {
-    //         if(res.status === 200) {
-    //             alert("Enquiry Sent."); 
-    //             this.resetForm();
-    //         }
-    //         else {
-    //             alert("Failed to send. Please try again.")
-    //         }
-    //     }).catch(err => {
-    //         console.log(err)
-    //     })
-    // }
-
     handleSubmit(e){
         e.preventDefault();
         axios({
-          method: "get", 
-          url:"/test", 
+          method: "POST", 
+          url:"/send", 
           data:  this.state
         }).then((res) => {
             if(res.status === 200) {
