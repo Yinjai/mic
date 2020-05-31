@@ -54,7 +54,7 @@ router.post('/send', (req, res) => {
 router.get('/test', (req, res) => {
     
     res.json({
-        'hello': 'hi!'
+        'hello': 'hi there!'
     });
 })
 
