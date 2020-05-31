@@ -40,6 +40,7 @@ router.post('/send', (req, res) => {
     }
 
     transporter.sendMail(mailOptions, (err, info) => {
+        
         if(err) {
             return console.log(err)
         }
