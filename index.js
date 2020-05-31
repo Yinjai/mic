@@ -1,13 +1,15 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const nodemailer = require('nodemailer')
-const app = express()
+const express = require('express');
+const serverless = require('serverless-http');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+const app = express();
+const router = express.Router();
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
-app.use(express.json())
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.post('/send', (req, res) => {
+router.post('/send', (req, res) => {
     nodemailer.createTestAccount((err, account) => {
         const htmlEmail = `
             <h3>Contact Details</h3>
@@ -26,7 +28,7 @@ app.post('/send', (req, res) => {
                 user: "elenora.kulas@ethereal.email",
                 pass: "Ewn9u12xVwEBXfVsBK"
             }
-        })
+        });
 
         let mailOptions = {
             from: 'test@testaccount.com',
@@ -44,13 +46,18 @@ app.post('/send', (req, res) => {
             }
             console.log("Message sent: %s", info)
             console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
-        })
+        });
     })
     res.send("message sent here");
 })
 
+
+app.use('/.netlify/functions/index', router);
+
 const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`)
+    console.log(`Server listening on port ${PORT}`);
 })
+
+module.exports.handler = serverless(app);

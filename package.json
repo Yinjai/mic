@@ -8,13 +8,21 @@
     "concurrently": "^5.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
     "nodemailer": "^6.4.8",
     "nodemon": "^2.0.4",
-    "react-scripts": "^3.4.1"
+    "npm-run-all": "^4.1.5",
+    "react-scripts": "^3.4.1",
+    "serverless-http": "^2.5.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
+    "start": "run-p start:**",
+    "start:app": "npm run start --prefix client",
+    "start:lambda": "netlify-lambda serve .",
+    "build": "run-p build:**",
+    "build:app": "react-scripts build",
+    "build:lambda": "netlify-lambda build .",
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
