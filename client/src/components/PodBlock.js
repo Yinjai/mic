@@ -9,7 +9,7 @@ class PodBlock extends Component {
             <div className="col-4 col-6-medium col-12-small">
                 <section className="box">
                     <Link className="image featured" to={{pathname:`/episode/${this.props.index}`, index: this.props.index}}>
-                        <img src={this.props.thumbnail} alt="" />
+                        <img src={this.props.thumbnail.replace('http', 'https')} alt="" />
                     </Link>
                     <header>
                         <h3>{this.props.title}</h3>
