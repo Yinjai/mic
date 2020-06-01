@@ -40,19 +40,19 @@ class Home extends Component {
                                     <div className="col-6 col-12-small">
                                         <section className="box">
                                             <div className="image featured">
-                                                <YouTube videoId="BkPzLBVSRnw" opts = {{height: '300', width: '100%'}} />
+                                                <YouTube videoId="5UC7ghzGadY" opts = {{height: '300', width: '100%'}} />
                                             </div>
                                             <header>
-                                                <h3>New Girl (ft Gemma)</h3>
-                                                <p>This week the guys have a special guest Gemma! On the latest episode of the Made In Chafford Podcast they take on:</p>
-                                                <li>Fashion</li>
-                                                <li>6ix9ine Returns</li>
-                                                <li>Going Number 1</li>
-                                                <li>Quarantine TV</li>
-                                                <li>Becoming a Trillionaire</li>
+                                                <h3>Las Olas (ft. Sebby)</h3>
+                                                <p>This week the guys have a special guest Sebby! On the latest episode of the Made In Chafford Podcast they take on:</p>
+                                                <li>Las Olas Rum</li>
+                                                <li>Being an Entrepreneur</li>
+                                                <li>Joe Rogan Deal</li>
+                                                <li>The Last Dance</li>
+                                                <li>Holidays after Lockdown</li>
                                             </header>
                                             <footer className="blockLinks">
-                                                <a href={`https://www.youtube.com/watch?v=BkPzLBVSRnw&feature=emb_title`} className="button solid">Watch on YouTube</a>
+                                                <a href={`https://www.youtube.com/watch?v=5UC7ghzGadY`} className="button solid">Watch on YouTube</a>
                                             </footer>
                                         </section>
                                     </div>
