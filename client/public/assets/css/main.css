@@ -2941,20 +2941,6 @@ input, select, textarea {
 
 	}
 	
-@media screen and (max-width: 375px) {
-	#banner {
-		background-position: 0% 0%;
-		padding: 12em 0;
-		margin: 2em 0 0 0;
-	}
-
-		#banner header {
-			padding: 1.5em 1em 1.5em 1em;
-			display: block;
-			border-radius: 0;
-			top: 198px;
-		}
-}
 
 @media screen and (max-width: 414px) {
 	#banner {
@@ -2968,6 +2954,21 @@ input, select, textarea {
 			display: block;
 			border-radius: 0;
 			top: 220px;
+		}
+}
+
+@media screen and (max-width: 375px) {
+	#banner {
+		background-position: 0% 0%;
+		padding: 12em 0;
+		margin: 2em 0 0 0;
+	}
+
+		#banner header {
+			padding: 1.5em 1em 1.5em 1em;
+			display: block;
+			border-radius: 0;
+			top: 198px;
 		}
 }
 
