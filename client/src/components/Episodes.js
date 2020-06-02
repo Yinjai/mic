@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PodcastFeed from '../functions/PodcastFeed.js';
+import PodcastFeed from '../functional/PodcastFeed.js';
 
 class Episodes extends Component {
 

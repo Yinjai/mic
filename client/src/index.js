@@ -6,7 +6,7 @@ import EpisodePage from './components/EpisodePage.js';
 import Episodes from './components/Episodes.js';
 import Header from './components/Header.js';
 import { BrowserRouter, Route } from 'react-router-dom';
-import ScrollToTop from './functions/ScrollToTop.js';
+import ScrollToTop from './functional/ScrollToTop.js';
 import MICPlaylist from './components/MICPlaylist.js';
 import About from './components/About.js';
 

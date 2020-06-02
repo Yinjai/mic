@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import SoundCloudBlock from './SoundCloudBlock.js';
-import PodcastFeed from '../functions/PodcastFeed.js';
+import PodcastFeed from '../functional/PodcastFeed.js';
 
 class EpisodePage extends Component {
 
