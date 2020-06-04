@@ -5,23 +5,22 @@ import ContactForm from '../components/ContactForm';
 
 const Loader = props => {
     const { promiseInProgress } = usePromiseTracker();
+    let isActive = false;
 
-    if(!promiseInProgress) {
-        return (
+    if(promiseInProgress) {
+        isActive = true;
+    }
+
+    return (
+        <LoadingOverlay
+            active={isActive}
+            spinner
+            text='Sending your enquiry...'
+        >
             <ContactForm />
-        )
-    }
-    else {
-        return (
-            <LoadingOverlay
-                active={true}
-                spinner
-                text='Sending your enquiry...'
-            >
-                <ContactForm />
-            </LoadingOverlay>
-        ) 
-    }
+        </LoadingOverlay>
+    ) 
+    
 }  
         
     

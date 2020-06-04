@@ -30,11 +30,11 @@ router.post('/send', (req, res) => {
     });
 
     let mailOptions = {
-        from: 'test@testaccount.com',
+        from: req.body.email,
         to: 'elenora.kulas@ethereal.email',  
         subject: 'New Message from Contact Form',
-        replyTo: 'test@testaccount.com',
-        subject: "New message",
+        replyTo: req.body.email,
+        subject: req.body.subject,
         text: req.body.message,
         html: htmlEmail
     }
@@ -52,12 +52,6 @@ router.post('/send', (req, res) => {
         );
     });
 })
-
-router.post('/api/world', (req, res) => {
-    res.send(
-      `I received your POST request. This is what you sent me: ${req.body.name}`,
-    );
-});
 
 app.use('/.netlify/functions/index', router);
 
