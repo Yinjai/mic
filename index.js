@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const serverless = require('serverless-http');
 const bodyParser = require('body-parser');
@@ -24,15 +25,14 @@ router.post('/send', (req, res) => {
         host: 'smtp.ethereal.email', 
         port: 587,
         auth: {
-            user: "elenora.kulas@ethereal.email",
-            pass: "Ewn9u12xVwEBXfVsBK"
+            user: process.env.USER,
+            pass: process.env.PASS
         }
     });
 
     let mailOptions = {
         from: req.body.email,
-        to: 'elenora.kulas@ethereal.email',  
-        subject: 'New Message from Contact Form',
+        to: 'elenora.kulas@ethereal.email',
         replyTo: req.body.email,
         subject: req.body.subject,
         text: req.body.message,
@@ -44,8 +44,6 @@ router.post('/send', (req, res) => {
         if(err) {
             return console.log(err)
         }
-        console.log("Message sent: %s", info)
-        console.log("Message URL: %s", nodemailer.getTestMessageUrl(info))
 
         res.send(
             nodemailer.getTestMessageUrl(info)
