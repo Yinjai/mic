@@ -25,8 +25,8 @@ router.post('/send', (req, res) => {
         host: 'smtp.ethereal.email', 
         port: 587,
         auth: {
-            user: "elenora.kulas@ethereal.email",
-            pass: "Ewn9u12xVwEBXfVsBK"
+            user: process.env.USER,
+            pass: process.env.PASS
         }
     });
 
