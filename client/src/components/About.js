@@ -8,6 +8,17 @@ class About extends Component {
         return(
 			<section id="main">
 				<div className="container">
+                    <article className="box post">
+                        {/* <img className="episodeThumbnail" src={this.props.thumbnail.replace('http', 'https')} alt="" /> */}
+                        <header>
+                            <h3>About us</h3>
+                        </header>
+                            <p>Placeholder</p>
+                            <p>Placeholder</p>
+                            <p>
+                                Made in Chafford <a href="https://twitter.com/madeinchafford">Twitter</a> & <a href="https://www.instagram.com/madeinchafford/">Instagram</a>
+                            </p>
+                    </article>
                     <Loader />
 				</div>
 			</section>

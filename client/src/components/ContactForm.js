@@ -63,7 +63,7 @@ class ContactForm extends Component {
         return(
             <article className="box post">
                 <form id="contact-form" onSubmit={this.handleSubmit.bind(this)}>
-                    <h3>Business Enquiries</h3>
+                    <h3>Contact Us</h3>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
                         <input type="text" className="form-control" value={name} onChange={this.onNameChange.bind(this)} />
@@ -72,8 +72,8 @@ class ContactForm extends Component {
                         <label htmlFor="exampleInputEmail1">Email address</label>
                         <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={this.onEmailChange.bind(this)} />
                     </div>
-                    <div className="form-group">
-                        <label htmlFor="subject">Subject</label>
+                    <div className="form-select">
+                        <label htmlFor="subject">Choose Subject</label>
                         <select 
                             value={subject} 
                             onChange={this.onSubjectChange.bind(this)} 
