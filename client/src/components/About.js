@@ -13,8 +13,8 @@ class About extends Component {
                         <header>
                             <h3>About us</h3>
                         </header>
-                            <p>Placeholder</p>
-                            <p>Placeholder</p>
+                            <p>Placeholders</p>
+                            <p>Placeholders</p>
                             <p>
                                 Made in Chafford <a href="https://twitter.com/madeinchafford">Twitter</a> & <a href="https://www.instagram.com/madeinchafford/">Instagram</a>
                             </p>
