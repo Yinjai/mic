@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Loader from '../functional/Loader';
-import ContactForm from './ContactForm';
 
 class About extends Component {
 

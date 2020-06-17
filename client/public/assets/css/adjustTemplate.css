@@ -169,3 +169,9 @@ select::-ms-expand {
     -ms-word-break: normal;
     word-break: normal;
 }
+
+@media (min-width: 1280px) {
+    .form-select select {
+        height: 54px;
+    }
+}

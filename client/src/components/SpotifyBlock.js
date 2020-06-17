@@ -4,6 +4,7 @@ function SpotifyBlock() {
     
     return(
         <iframe 
+            title="spotifyframe"
             src="https://open.spotify.com/embed/playlist/0absvxmEjPk41K9F0tmJGx" 
             width="100%" 
             height="380" 

@@ -17,10 +17,10 @@ class MICPlaylist extends Component {
 							<SpotifyBlock />
 						</p>
 						<p className="podcastLinks">
-							<a className ="spotifyPodcasts" target="_blank" href="https://open.spotify.com/playlist/0absvxmEjPk41K9F0tmJGx?si=MewYOujHQmuWBtzFoVienw">
+							<a className ="spotifyPodcasts" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/playlist/0absvxmEjPk41K9F0tmJGx?si=MewYOujHQmuWBtzFoVienw">
 								<img className ="spotifyPodcastsImage"src="/images/spotifylisten.jpg" alt="" />
 							</a>
-							<a className ="appleMusic" target="_blank" href="https://music.apple.com/gb/playlist/m-i-c-playlist/pl.u-b3b8RA9UvErBL2">
+							<a className ="appleMusic" rel="noopener noreferrer" target="_blank" href="https://music.apple.com/gb/playlist/m-i-c-playlist/pl.u-b3b8RA9UvErBL2">
                         		<img className ="applePodcastsImage" src="/images/applemusic.png" alt="" />
                     		</a>
 							

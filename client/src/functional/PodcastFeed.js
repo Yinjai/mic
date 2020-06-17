@@ -8,24 +8,23 @@ function PodcastFeed (props) {
     const corsUrl = "https://api.rss2json.com/v1/api.json?rss_url=http://feeds.soundcloud.com/users/soundcloud:users:153165239/sounds.rss";
     const [initialised, setInitialised] = useState(false);
     const [listings, setListings] = useState([]);
-    const [data, setData]  = useState({});
-       
-    const getListings = async () => {
-        try {
-            const response = await axios.get(corsUrl);
-            setListings(response.data.items);
-            setData(response.data.feed);
-        } catch (ex) {
-            console.log(ex);
-        }
-    }
+    const [setData]  = useState({});
 
     useEffect(() => {
         if (!initialised) {
-          getListings(corsUrl);
-          setInitialised(true);
+            const getListings = async () => {
+                try {
+                    const response = await axios.get(corsUrl);
+                    setListings(response.data.items);
+                    setData(response.data.feed);
+                } catch (ex) {
+                    console.log(ex);
+                }
+            }
+            getListings(corsUrl);
+            setInitialised(true);
         }
-    });
+    }, [initialised, setData]);
 
     if(props.variant==="single") {
         const episodeInfo = listings.filter(listings => listings.guid.split('tracks/').pop() === props.episodeId);

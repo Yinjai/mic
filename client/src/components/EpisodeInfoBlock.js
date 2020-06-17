@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import SoundCloudBlock from './SoundCloudBlock.js';
 
@@ -23,10 +22,10 @@ class EpisodeInfoBlock extends Component {
                     <SoundCloudBlock index={this.props.episodeId} />
                 </p>
                 <p className="podcastLinks">
-                    <a className ="spotifyPodcasts" target="_blank" href="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF">
+                    <a className ="spotifyPodcasts" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF">
                         <img className ="spotifyPodcastsImage"src="/images/spotifylisten.jpg" alt="" />
                     </a>
-                    <a className ="applePodcasts" target="_blank" href="https://podcasts.apple.com/gb/podcast/made-in-chafford/id1235162230">
+                    <a className ="applePodcasts" rel="noopener noreferrer" target="_blank" href="https://podcasts.apple.com/gb/podcast/made-in-chafford/id1235162230">
                         <img className ="applePodcastsImage" src="/images/applelisten.svg" alt="" />
                     </a>
                 </p>

@@ -6,6 +6,7 @@ function SoundCloudBlock() {
     
     return(
         <iframe 
+            title="soundcloudframe"
             width="100%" 
             height="166" 
             scrolling="no" 

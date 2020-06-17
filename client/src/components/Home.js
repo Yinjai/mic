@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import IntroBlock from './IntroBlock.js';
 import Episodes from './Episodes.js';
-import YouTubeFeed from './YouTubeFeed.js';
 
 import YouTube from 'react-youtube';
 class Home extends Component {
@@ -40,19 +39,19 @@ class Home extends Component {
                                     <div className="col-6 col-12-small">
                                         <section className="box">
                                             <div className="image featured">
-                                                <YouTube videoId="5UC7ghzGadY" opts = {{height: '300', width: '100%'}} />
+                                                <YouTube videoId="Yoc9uUDnWG0" opts = {{height: '300', width: '100%'}} />
                                             </div>
                                             <header>
-                                                <h3>Las Olas (ft. Sebby)</h3>
-                                                <p>This week the guys have a special guest Sebby! On the latest episode of the Made In Chafford Podcast they take on:</p>
-                                                <li>Las Olas Rum</li>
-                                                <li>Being an Entrepreneur</li>
-                                                <li>Joe Rogan Deal</li>
-                                                <li>The Last Dance</li>
-                                                <li>Holidays after Lockdown</li>
+                                                <h3>This You? (ft Deji). Audio Only</h3>
+                                                <p>On the latest episode of the Made In Chafford Podcast the guys have a special guest Deji! They take on:</p>
+                                                <li>Being an MUA</li>
+                                                <li>Supporting Black Businesses</li>
+                                                <li>Beauty Industry</li>
+                                                <li>Black Lives Matter</li>
+                                                <li>Mental Health</li>
                                             </header>
                                             <footer className="blockLinks">
-                                                <a href={`https://www.youtube.com/watch?v=5UC7ghzGadY`} className="button solid">Watch on YouTube</a>
+                                                <a href={`https://www.youtube.com/watch?v=Yoc9uUDnWG0`} className="button solid">Watch on YouTube</a>
                                             </footer>
                                         </section>
                                     </div>

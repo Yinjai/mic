@@ -10,9 +10,9 @@ class Footer extends Component {
                         <div className="footerSection">
                             <section>
                                 <ul className="social">
-                                    <li><a className="icon brands fa-facebook-f" target="_blank" href="https://www.facebook.com/MadeInChafford/"><span className="label">Facebook</span></a></li>
-                                    <li><a className="icon brands fa-twitter" target="_blank" href="https://twitter.com/madeinchafford"><span className="label">Twitter</span></a></li>
-                                    <li><a className="icon brands fa-instagram" target="_blank" href="https://www.instagram.com/madeinchafford/"><span className="label">Instagram</span></a></li>
+                                    <li><a className="icon brands fa-facebook-f" rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/MadeInChafford/"><span className="label">Facebook</span></a></li>
+                                    <li><a className="icon brands fa-twitter" rel="noopener noreferrer" target="_blank" href="https://twitter.com/madeinchafford"><span className="label">Twitter</span></a></li>
+                                    <li><a className="icon brands fa-instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/madeinchafford/"><span className="label">Instagram</span></a></li>
                                 </ul>
                                 <ul className="contact">
                                     <li>

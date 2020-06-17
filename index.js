@@ -19,9 +19,10 @@ router.post('/send', (req, res) => {
         <ul>
             <li>Name: ${req.body.name}</li>
             <li>Email: ${req.body.email}</li>
+            <li>Subject: ${req.body.subject}</li>
         </ul>
-        <h3>Message</h3>
-        <p>Name: ${req.body.message}</p>
+        <h3>Message:</h3>
+        <p>${req.body.message}</p>
     `
     const oauth2Client = new OAuth2(
         process.env.CLIENTID,

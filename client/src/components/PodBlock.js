@@ -17,7 +17,7 @@ class PodBlock extends Component {
 
                     <p>{this.props.description}</p>
                     <footer className="blockLinks">
-                        <Link className="actions" to={{pathname:`/episode/${this.props.index}`, index: this.props.index}} className="button alt" >Listen Now</Link>
+                        <Link className="button alt" to={{pathname:`/episode/${this.props.index}`, index: this.props.index}} >Listen Now</Link>
                     </footer>
                 </section>
             </div>
