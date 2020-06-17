@@ -170,8 +170,15 @@ select::-ms-expand {
     word-break: normal;
 }
 
+
 @media (min-width: 1280px) {
-    .form-select select {
-        height: 54px;
+    .form-select:after {
+        top: 54px;
+    }
+}
+
+@media (min-width: 1680px) {
+    .form-select:after {
+        top: 57px;
     }
 }
