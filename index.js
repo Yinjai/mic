@@ -4,6 +4,7 @@ const serverless = require('serverless-http');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const { google } = require("googleapis");
+const OAuth2 = google.auth.OAuth2;
 const app = express();
 const router = express.Router();
 
@@ -13,7 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json());
 
 router.post('/send', (req, res) => {
-    const OAuth2 = google.auth.OAuth2;
     const htmlEmail = `
         <h3>Contact Details</h3>
         <ul>
