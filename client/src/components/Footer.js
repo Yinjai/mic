@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Footer extends Component {
 
     render() {
-        return(
+        return (
             <section id="footer">
                 <div className="container">
                     <div className="row">
@@ -16,18 +16,17 @@ class Footer extends Component {
                                 </ul>
                                 <ul className="contact">
                                     <li>
-                                        <h3>Enquiries</h3>
                                         <p><a href="mailto:madeinchafford@gmail.com">madeinchafford@gmail.com</a></p>
                                     </li>
                                 </ul>
                             </section>
                         </div>
                         <div className="col-12">
-                                <div id="copyright">
-                                    <ul className="links">
-                                        <li>&copy; Made in Chafford. All rights reserved.</li>
-                                    </ul>
-                                </div>
+                            <div id="copyright">
+                                <ul className="links">
+                                    <li>&copy; Made in Chafford. All rights reserved.</li>
+                                </ul>
+                            </div>
 
                         </div>
                     </div>

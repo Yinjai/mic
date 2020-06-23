@@ -9,6 +9,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import ScrollToTop from './functional/ScrollToTop.js';
 import MICPlaylist from './components/MICPlaylist.js';
 import About from './components/About.js';
+import ErrorPage from './components/ErrorPage.js';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
                 <Route path="/episode/:episodeId" component={EpisodePage} />
                 <Route path="/micplaylist" component={MICPlaylist} />
                 <Route path="/about" component={About} />
+                <Route path="*" component={ErrorPage} />
             </BrowserRouter>
             <Footer />
         </div>
