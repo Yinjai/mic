@@ -10,18 +10,18 @@ import ScrollToTop from './functional/ScrollToTop.js';
 import MICPlaylist from './components/MICPlaylist.js';
 import About from './components/About.js';
 
-const App = ()=> {
+const App = () => {
 
     return (
-        <div id="page-wrapper" style={{height: '100%'}}>
+        <div id="page-wrapper" style={{ height: '100%' }}>
             <BrowserRouter>
                 <ScrollToTop />
                 <Header />
                 <Route path="/" exact component={Home} />
-                <Route path="/episodes" component={Episodes} />
-                <Route path="/episode/:episodeId" component={EpisodePage} />      
+                <Route path="/episodes/page/:page" exact component={() => <Episodes variant="list" />} />
+                <Route path="/episode/:episodeId" component={EpisodePage} />
                 <Route path="/micplaylist" component={MICPlaylist} />
-                <Route path="/about" component={About} />                    
+                <Route path="/about" component={About} />
             </BrowserRouter>
             <Footer />
         </div>

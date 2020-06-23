@@ -29,7 +29,7 @@ class Home extends Component {
                 <section id="main">
                     <div className="container">
                         <div className="row">
-                            <Episodes state={this.props} />
+                            <Episodes state={this.props} variant="home" />
                             <div className="col-12">
                                 <section>
                                     <header className="major">

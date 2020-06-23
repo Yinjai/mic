@@ -2,21 +2,22 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PodBlock from '../components/PodBlock';
 import EpisodeInfoBlock from '../components/EpisodeInfoBlock';
+import Pagination from '../components/Pagination';
 
-function PodcastFeed (props) {
-  
-    const corsUrl = "https://api.rss2json.com/v1/api.json?rss_url=http://feeds.soundcloud.com/users/soundcloud:users:153165239/sounds.rss";
+function PodcastFeed(props) {
+    const count = 30
+    const corsUrl = `https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffeeds.soundcloud.com%2Fusers%2Fsoundcloud%3Ausers%3A153165239%2Fsounds.rss&api_key=${process.env.REACT_APP_RSSAPI}&count=${count}`;
     const [initialised, setInitialised] = useState(false);
     const [listings, setListings] = useState([]);
-    const [setData]  = useState({});
+    const [currentPage, setCurrentPage] = useState(1);
+    const [postsPerPage] = useState(6);
 
     useEffect(() => {
         if (!initialised) {
             const getListings = async () => {
                 try {
-                    const response = await axios.get(corsUrl);
+                    const response = await axios.get(corsUrl)
                     setListings(response.data.items);
-                    setData(response.data.feed);
                 } catch (ex) {
                     console.log(ex);
                 }
@@ -24,15 +25,20 @@ function PodcastFeed (props) {
             getListings(corsUrl);
             setInitialised(true);
         }
-    }, [initialised, setData]);
+    }, [initialised, corsUrl]);
 
-    if(props.variant==="single") {
+    const indexOfLastPost = currentPage * postsPerPage;
+    const indexOfFirstPost = indexOfLastPost - postsPerPage;
+    const currentPosts = listings.slice(indexOfFirstPost, indexOfLastPost);
+    const paginate = pageNumber => setCurrentPage(pageNumber);
+
+    if (props.variant === "single") {
         const episodeInfo = listings.filter(listings => listings.guid.split('tracks/').pop() === props.episodeId);
-        return(
+        return (
             episodeInfo.map((l, i) => {
-                return(
+                return (
                     <EpisodeInfoBlock
-                        key={i} 
+                        key={i}
                         title={l.title}
                         description={l.description}
                         pubDate={l.pubDate}
@@ -42,13 +48,36 @@ function PodcastFeed (props) {
                 )
             })
         )
+    } else if (props.variant === "list") {
+        return (
+            <div className="row">
+                {
+                    currentPosts.map((l, i) => {
+                        return (
+                            <PodBlock
+                                index={l.guid.split('tracks/').pop()}
+                                key={i}
+                                title={l.title}
+                                description={l.description}
+                                thumbnail={l.thumbnail}
+                            />
+                        );
+                    })
+                }
+                <Pagination
+                    postsPerPage={postsPerPage}
+                    totalPosts={listings.length}
+                    paginate={paginate}
+                />
+            </div>
+        )
     } else {
-        return(
-            listings.slice(0,6).map((l, i) => {
+        return (
+            listings.slice(0, 6).map((l, i) => {
                 return (
-                    <PodBlock 
-                        index={l.guid.split('tracks/').pop()} 
-                        key={i} 
+                    <PodBlock
+                        index={l.guid.split('tracks/').pop()}
+                        key={i}
                         title={l.title}
                         description={l.description}
                         thumbnail={l.thumbnail}

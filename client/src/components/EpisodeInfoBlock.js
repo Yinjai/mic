@@ -1,32 +1,31 @@
 import React, { Component } from 'react';
-
 import SoundCloudBlock from './SoundCloudBlock.js';
 
 class EpisodeInfoBlock extends Component {
-    
+
     render() {
-        return(
+        return (
             <div>
                 <img className="episodeThumbnail" src={this.props.thumbnail.replace('http', 'https')} alt="" />
                 <section>
                     <header>
                         <h3>Episode {this.props.title}</h3>
                     </header>
-                        <p>{this.props.pubDate.split(' ').shift()}</p>
-                        <p>{this.props.description}</p>
-                        <p>
-                            Made in Chafford <a href="https://twitter.com/madeinchafford">Twitter</a> & <a href="https://www.instagram.com/madeinchafford/">Instagram</a>
-                        </p>
+                    <p>{this.props.pubDate.split(' ').shift()}</p>
+                    <p>{this.props.description}</p>
+                    <p>
+                        Made in Chafford <a href="https://twitter.com/madeinchafford">Twitter</a> & <a href="https://www.instagram.com/madeinchafford/">Instagram</a>
+                    </p>
                 </section>
                 <p>
                     <SoundCloudBlock index={this.props.episodeId} />
                 </p>
                 <p className="podcastLinks">
-                    <a className ="spotifyPodcasts" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF">
-                        <img className ="spotifyPodcastsImage"src="/images/spotifylisten.jpg" alt="" />
+                    <a className="spotifyPodcasts" rel="noopener noreferrer" target="_blank" href="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF">
+                        <img className="spotifyPodcastsImage" src="/images/spotifylisten.jpg" alt="" />
                     </a>
-                    <a className ="applePodcasts" rel="noopener noreferrer" target="_blank" href="https://podcasts.apple.com/gb/podcast/made-in-chafford/id1235162230">
-                        <img className ="applePodcastsImage" src="/images/applelisten.svg" alt="" />
+                    <a className="applePodcasts" rel="noopener noreferrer" target="_blank" href="https://podcasts.apple.com/gb/podcast/made-in-chafford/id1235162230">
+                        <img className="applePodcastsImage" src="/images/applelisten.svg" alt="" />
                     </a>
                 </p>
                 <section>

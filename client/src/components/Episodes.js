@@ -3,8 +3,8 @@ import PodcastFeed from '../functional/PodcastFeed.js';
 
 class Episodes extends Component {
 
-    render() {
-        return(
+	render() {
+		return (
 			<div>
 				<section id="main">
 					<div className="container">
@@ -14,15 +14,16 @@ class Episodes extends Component {
 									<h2>Episodes</h2>
 								</header>
 								<div className="row">
-									<PodcastFeed state={this.props} />
+									<PodcastFeed state={this.props} variant={this.props.variant} />
+
 								</div>
 							</section>
 						</div>
 					</div>
 				</section>
 			</div>
-        )
-    }
+		)
+	}
 }
 
 export default Episodes

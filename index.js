@@ -49,7 +49,7 @@ router.post('/send', (req, res) => {
         service: "gmail",
         auth: {
             type: "OAuth2",
-            user: "madeinchafford@gmail.com", 
+            user: "madeinchafford@gmail.com",
             clientId: process.env.CLIENTID,
             clientSecret: process.env.CLIENTSECRET,
             refreshToken: process.env.REFRESHTOKEN,
@@ -70,7 +70,7 @@ router.post('/send', (req, res) => {
     }
 
     transporter.sendMail(mailOptions, (err, info) => {
-        if(err) {
+        if (err) {
             return console.log(err)
         }
 
@@ -79,6 +79,7 @@ router.post('/send', (req, res) => {
         );
     });
 })
+
 
 app.use('/.netlify/functions/index', router);
 
