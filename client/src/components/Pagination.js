@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import ScrollToTop from '../functional/ScrollToTop';
+import { NavLink } from 'react-router-dom';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
     const pageNumbers = [];
@@ -14,9 +13,9 @@ const Pagination = ({ postsPerPage, totalPosts, paginate }) => {
             <ul>
                 {pageNumbers.map(number => (
                     <li key={number} className='page-item'>
-                        <Link to={{ pathname: `/episodes/page/${number}` }} onClick={() => paginate(number)} className='button alt'>
+                        <NavLink to={{ pathname: `/episodes/page/${number}` }} onClick={() => paginate(number)} className='button alt' activeClassName='active-pagenumber'>
                             {number}
-                        </Link>
+                        </NavLink>
                     </li>
                 ))}
             </ul>

@@ -114,7 +114,6 @@ p {
 
 .sidebar.open {
     transform: translateX(0);
-    
     box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
 }
 
@@ -130,6 +129,10 @@ p {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+}
+
+.active-pagenumber {
+    background-color:#d52349 !important;
 }
 
 
