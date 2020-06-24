@@ -16,6 +16,7 @@ class Footer extends Component {
                                 </ul>
                                 <ul className="contact">
                                     <li>
+                                        <h3>Enquiries</h3>
                                         <p><a href="mailto:madeinchafford@gmail.com">madeinchafford@gmail.com</a></p>
                                     </li>
                                 </ul>
