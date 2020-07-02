@@ -39,19 +39,19 @@ class Home extends Component {
                                         <div className="col-6 col-12-small">
                                             <section className="box">
                                                 <div className="image featured">
-                                                    <YouTube videoId="UPEyKJHUz5E" opts={{ height: '300', width: '100%' }} />
+                                                    <YouTube videoId="HjzdY0GA8SI" opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>Black Beethoven (Ft John Omi)</h3>
-                                                    <p>On the latest episode of the Made In Chafford Podcast the guys have a special guest John! They take on:</p>
-                                                    <li>Johns Youtube Channel</li>
-                                                    <li>Cars</li>
-                                                    <li>Driving Horror Stories</li>
-                                                    <li>J. Cole vs Noname</li>
-                                                    <li>Jamie Foxx as Mike Tyson</li>
+                                                    <h3>18Hunna For The New Lakeside</h3>
+                                                    <p>On the latest episode of the Made In Chafford Podcast the guys take on:</p>
+                                                    <li>Lakeside Shutting Down?</li>
+                                                    <li>Guardians of Gotcha Video</li>
+                                                    <li>White Actors for Black Actors</li>
+                                                    <li>Social Media Break</li>
+                                                    <li>MIC Impact</li>
                                                 </header>
                                                 <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=UPEyKJHUz5E`} className="button solid">Watch on YouTube</a>
+                                                    <a href={`https://www.youtube.com/watch?v=HjzdY0GA8SI`} className="button solid">Watch on YouTube</a>
                                                 </footer>
                                             </section>
                                         </div>
