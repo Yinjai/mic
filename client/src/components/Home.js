@@ -39,19 +39,19 @@ class Home extends Component {
                                         <div className="col-6 col-12-small">
                                             <section className="box">
                                                 <div className="image featured">
-                                                    <YouTube videoId="HjzdY0GA8SI" opts={{ height: '300', width: '100%' }} />
+                                                    <YouTube videoId="v9vpMonk9xo" opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>18Hunna For The New Lakeside</h3>
-                                                    <p>On the latest episode of the Made In Chafford Podcast the guys take on:</p>
+                                                    <h3>Magic Usna (ft Nathan)</h3>
+                                                    {/* <p>On the latest episode of the Made In Chafford Podcast the guys take on:</p>
                                                     <li>Lakeside Shutting Down?</li>
                                                     <li>Guardians of Gotcha Video</li>
                                                     <li>White Actors for Black Actors</li>
                                                     <li>Social Media Break</li>
-                                                    <li>MIC Impact</li>
+                                                    <li>MIC Impact</li> */}
                                                 </header>
                                                 <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=HjzdY0GA8SI`} className="button solid">Watch on YouTube</a>
+                                                    <a href={`https://www.youtube.com/watch?v=v9vpMonk9xo`} className="button solid">Watch on YouTube</a>
                                                 </footer>
                                             </section>
                                         </div>
