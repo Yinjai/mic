@@ -42,13 +42,12 @@ class Home extends Component {
                                                     <YouTube videoId="cOYVGC80fyc" opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>Oontz Oontz Music (ft Aanu)</h3>
-                                                    <p>On the latest episode of the Made In Chafford Podcast the guys have a special guest Aanu! They take on:</p>
-                                                    <li>Aanu's Journey</li>
-                                                    <li>Music Industry</li>
-                                                    <li>Best Artists for Features</li>
-                                                    <li>Old RNB vs New RNB</li>
-                                                    <li>Album of the Year</li>
+                                                    <h3>Hancuck</h3>
+                                                    <p>On the latest episode of the Made In Chafford Podcast the guys take on:</p>
+                                                    <li>Drake's New Songs</li>
+                                                    <li>Will vs Jada</li>
+                                                    <li>Meg vs Tory Lanez</li>
+                                                    <li>Cancelling Nick Cannon</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=cOYVGC80fyc`} className="button solid">Watch on YouTube</a>
