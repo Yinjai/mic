@@ -39,7 +39,7 @@ class Home extends Component {
                                         <div className="col-6 col-12-small">
                                             <section className="box">
                                                 <div className="image featured">
-                                                    <YouTube videoId="VQebo08mP-w" opts={{ height: '300', width: '100%' }} />
+                                                    <YouTube videoId="cOYVGC80fyc" opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
                                                     <h3>Oontz Oontz Music (ft Aanu)</h3>
@@ -51,7 +51,7 @@ class Home extends Component {
                                                     <li>Album of the Year</li>
                                                 </header>
                                                 <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=VQebo08mP-w`} className="button solid">Watch on YouTube</a>
+                                                    <a href={`https://www.youtube.com/watch?v=cOYVGC80fyc`} className="button solid">Watch on YouTube</a>
                                                 </footer>
                                             </section>
                                         </div>
