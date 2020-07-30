@@ -6,6 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
+        const videoId = "X7x2a01z0M4";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -39,18 +40,19 @@ class Home extends Component {
                                         <div className="col-6 col-12-small">
                                             <section className="box">
                                                 <div className="image featured">
-                                                    <YouTube videoId="cOYVGC80fyc" opts={{ height: '300', width: '100%' }} />
+                                                    <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>Hancuck</h3>
-                                                    <p>On the latest episode of the Made In Chafford Podcast the guys take on:</p>
-                                                    <li>Drake's New Songs</li>
-                                                    <li>Will vs Jada</li>
-                                                    <li>Meg vs Tory Lanez</li>
-                                                    <li>Cancelling Nick Cannon</li>
+                                                    <h3>You Aint Got The Answers Ye ( ft. JYellowL)</h3>
+                                                    <p>On the latest episode of the Made In Chafford Podcast the guys have a special guest JYellowL! They take on:</p>
+                                                    <li>JYellowL's Journey</li>
+                                                    <li>Best Songs On FIFA</li>
+                                                    <li>Irish Rap Scene</li>
+                                                    <li>Dual Heritage</li>
+                                                    <li>Kanye West Meltdown</li>
                                                 </header>
                                                 <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=cOYVGC80fyc`} className="button solid">Watch on YouTube</a>
+                                                    <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
                                                 </footer>
                                             </section>
                                         </div>
