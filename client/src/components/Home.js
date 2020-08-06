@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "X7x2a01z0M4";
+        const videoId = "3-ZoOQpZVR4";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -43,13 +43,14 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>You Aint Got The Answers Ye ( ft. JYellowL)</h3>
-                                                    <p>On the latest episode of the Made In Chafford Podcast the guys have a special guest JYellowL! They take on:</p>
-                                                    <li>JYellowL's Journey</li>
-                                                    <li>Best Songs On FIFA</li>
-                                                    <li>Irish Rap Scene</li>
-                                                    <li>Dual Heritage</li>
-                                                    <li>Kanye West Meltdown</li>
+                                                    <h3>Pushing Brixx</h3>
+                                                    <p>On the latest episode of the Made In Chafford Podcast the guys take on:</p>
+                                                    <li>Wiley Controversy</li>
+                                                    <li>Haircuts</li>
+                                                    <li>Your Collection</li>
+                                                    <li>Drake & Headie One</li>
+                                                    <li>Meg vs Tory Lanez Conspiracy</li>
+                                                    <li>Pusha Ts Son</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
