@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "C1qsvcR286Y";
+        const videoId = "NisdeASX_rM";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -43,13 +43,13 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>49. Famalam (ft. Tom Moutchi, Gbemisola Ikumelo & Danielle Vitalis)</h3>
-                                                    <p>On the latest episode of the Made In Chafford Podcast the guys have a special guests the cast of Famalam! They take on:</p>
-                                                    <li>Famalam Season 3</li>
-                                                    <li>Lack of UK Sketch Shows</li>
-                                                    <li>UK vs US Acting</li>
+                                                    <h3>Big 5 0 (ft J Gully)</h3>
+                                                    <p>On the 50th episode of Made In Chafford Podcast, the lads are joined by J Gully! They take on:</p>
+                                                    <li>His Career so far</li>
                                                     <li>Influences</li>
-                                                    <li>Upcoming UK Stars</li>
+                                                    <li>OVO vs G Unit as a Label</li>
+                                                    <li>Criticsm of WAP</li>
+                                                    <li>The last influential Album</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
