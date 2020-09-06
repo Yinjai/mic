@@ -10,12 +10,14 @@ import ScrollToTop from './functional/ScrollToTop.js';
 import MICPlaylist from './components/MICPlaylist.js';
 import About from './components/About.js';
 import ErrorPage from './components/ErrorPage.js';
+import GA from './functional/GoogleAnalytics';
 
 const App = () => {
 
     return (
         <div id="page-wrapper" style={{ height: '100%' }}>
             <BrowserRouter>
+                {GA.init() && <GA.RouteTracker />}
                 <ScrollToTop />
                 <Header />
                 <Switch>
