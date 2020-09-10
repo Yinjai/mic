@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "NisdeASX_rM";
+        const videoId = "HeSDizXv0nc";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -43,13 +43,14 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>Big 5 0 (ft J Gully)</h3>
-                                                    <p>On the 50th episode of Made In Chafford Podcast, the lads are joined by J Gully! They take on:</p>
-                                                    <li>His Career so far</li>
-                                                    <li>Influences</li>
-                                                    <li>OVO vs G Unit as a Label</li>
-                                                    <li>Criticsm of WAP</li>
-                                                    <li>The last influential Album</li>
+                                                    <h3>51. Splits In The Air</h3>
+                                                    <p>Welcome to another episode of Made In Chafford Podcast, the lads take on:</p>
+                                                    <li>RIP Chadwick Boseman</li>
+                                                    <li>The Batman Trailer</li>
+                                                    <li>Do We Forgive Draya?</li>
+                                                    <li>Nines Album</li>
+                                                    <li>Joe Budden Deal</li>
+                                                    <li>Friends Moving to Girls</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
@@ -59,14 +60,14 @@ class Home extends Component {
                                         <div className="col-6 col-12-small">
                                             <section className="box">
                                                 <div className="image featured">
-                                                    <YouTube videoId="qsHlSr-wzyU" opts={{ height: '300', width: '100%' }} />
+                                                    <YouTube videoId="e5D4bXn0LFw" opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>AlphaEdge Parley Adidas 4D</h3>
-                                                    <p>A review of the AlphaEdge Parley Adidas 4D on Adidas 4D week</p>
+                                                    <h3>Yeezy 350 Israfil & On Feet Review</h3>
+                                                    <p>The new Yeezy 350 release</p>
                                                 </header>
                                                 <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=qsHlSr-wzyU&feature=emb_title`} className="button solid">Watch on YouTube</a>
+                                                    <a href={`https://www.youtube.com/watch?v=e5D4bXn0LFw&feature=emb_title`} className="button solid">Watch on YouTube</a>
                                                 </footer>
                                             </section>
                                         </div>
