@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "GPqUXRMTr3k";
+        const videoId = "BFIqJu6UJ8E";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -43,13 +43,13 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>52. Spray On Jeans (Ft Billie Forbes)</h3>
-                                                    <p>On the latest episode of Made In Chafford Podcast, the lads are joined by Billie! They take on:</p>
-                                                    <li>Leisure and Tourism</li>
-                                                    <li>Positive Vibes</li>
-                                                    <li>Fashion Choices</li>
-                                                    <li>Eat Out To Help Out</li>
-                                                    <li>Daily Affirmations</li>
+                                                    <h3>53. Living His Raps (Ft Tolly T)</h3>
+                                                    <p>On the latest episode of Made In Chafford Podcast, the lads are joined by Tolly T! They take on:</p>
+                                                    <li>The Receipts Podcast</li>
+                                                    <li>Top 10 Drake Songs</li>
+                                                    <li>Is Dagenham East London?</li>
+                                                    <li>Growing Up In Essex</li>
+                                                    <li>Toxic Masculinity</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
