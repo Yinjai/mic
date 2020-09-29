@@ -59,14 +59,14 @@ class Home extends Component {
                                         <div className="col-6 col-12-small">
                                             <section className="box">
                                                 <div className="image featured">
-                                                    <YouTube videoId="e5D4bXn0LFw" opts={{ height: '300', width: '100%' }} />
+                                                    <YouTube videoId="WdXQUGrFtLo" opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>Yeezy 350 Israfil & On Feet Review</h3>
-                                                    <p>The new Yeezy 350 release</p>
+                                                    <h3>Air Jordan 5 SE Oregon Dunk</h3>
+                                                    <p></p>
                                                 </header>
                                                 <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=e5D4bXn0LFw&feature=emb_title`} className="button solid">Watch on YouTube</a>
+                                                    <a href={`https://www.youtube.com/watch?v=WdXQUGrFtLo`} className="button solid">Watch on YouTube</a>
                                                 </footer>
                                             </section>
                                         </div>
