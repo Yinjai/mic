@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "BFIqJu6UJ8E";
+        const videoId = "S0po-gh1LV8";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -43,13 +43,11 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>53. Living His Raps (Ft Tolly T)</h3>
-                                                    <p>On the latest episode of Made In Chafford Podcast, the lads are joined by Tolly T! They take on:</p>
-                                                    <li>The Receipts Podcast</li>
-                                                    <li>Top 10 Drake Songs</li>
-                                                    <li>Is Dagenham East London?</li>
-                                                    <li>Growing Up In Essex</li>
-                                                    <li>Toxic Masculinity</li>
+                                                    <h3>54. I Dont Wanna Lose You</h3>
+                                                    <p>On the latest episode of Made In Chafford Podcast the lads take on</p>
+                                                    <li>Cardi B vs Offset</li>
+                                                    <li>Simping vs Tricking</li>
+                                                    <li>I Dont Want To Lose You</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
