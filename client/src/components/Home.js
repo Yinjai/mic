@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "1MF_4zjimI4";
+        const videoId = "0dCbUYVr73A";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -43,13 +43,13 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>55. Aouar Aouar, Partey Tey (ft. Scully)</h3>
-                                                    <p>On the latest episode of Made In Chafford Podcast the lads are joined by special guest Scully! They take on</p>
-                                                    <li>Childhood Celebrity Crushes</li>
-                                                    <li>Arsenal Singings</li>
-                                                    <li>UK Music Scene Regressing</li>
-                                                    <li>FIFA Soundtrack</li>
-                                                    <li>Politics & Trump</li>
+                                                    <h3>56. Flu Game</h3>
+                                                    <p>On the latest episode of Made In Chafford Podcast, the lads take on:</p>
+                                                    <li>Rise of Covid Cases</li>
+                                                    <li>Trump vs Biden</li>
+                                                    <li>Spiderman 3 Jamie Foxx</li>
+                                                    <li>Thank You to our Supporters</li>
+                                                    <li>New Music</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
