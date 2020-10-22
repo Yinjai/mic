@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "0dCbUYVr73A";
+        const videoId = "_U5scE7AARs";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -43,13 +43,14 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>56. Flu Game</h3>
+                                                    <h3>57. Icy Chips</h3>
                                                     <p>On the latest episode of Made In Chafford Podcast, the lads take on:</p>
-                                                    <li>Rise of Covid Cases</li>
-                                                    <li>Trump vs Biden</li>
-                                                    <li>Spiderman 3 Jamie Foxx</li>
-                                                    <li>Thank You to our Supporters</li>
-                                                    <li>New Music</li>
+                                                    <li>Holidays</li>
+                                                    <li>Stormzy v Chip</li>
+                                                    <li>Lakers 2020 Champions</li>
+                                                    <li>U So Icy Ima Glacier Boyz</li>
+                                                    <li>Offsett Got Cardi Back</li>
+                                                    <li>Tory Sentenced</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
