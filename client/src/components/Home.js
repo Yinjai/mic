@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "BKqOJfqXEaM";
+        const videoId = "7MzIR_5S0no";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -18,6 +18,20 @@ class Home extends Component {
                     </section>
 
                     <section id="intro" className="container">
+                        <section id="intro" className="latestSpotifyEp">
+                            <header className="major">
+                                <h2>Lastest Podcast Episode</h2>
+                            </header>
+                            <iframe
+                                title="spotifyframe"
+                                src="https://open.spotify.com/embed-podcast/show/3WH7F5Br5i9AQGSugnlDHF"
+                                width="100%"
+                                height="160"
+                                frameborder="0"
+                                allowtransparency="true"
+                                allow="encrypted-media">
+                            </iframe>
+                        </section>
                         <div className="row">
                             <IntroBlock position="middle" logo="fab fa-youtube fa-9x" title="YouTube" link="https://www.youtube.com/channel/UCvTfkEuNaBnltO8loGct3Ww" />
                             <IntroBlock position="middle" logo="fab fa-spotify fa-9x" title="Spotify" link="https://open.spotify.com/show/3WH7F5Br5i9AQGSugnlDHF" />
@@ -43,13 +57,14 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>62. Carms (Ft Carms)</h3>
-                                                    <p>On the latest episode of Made In Chafford podcast the lads are joined by Carmen! They take on:</p>
-                                                    <li>ASOS Collection</li>
-                                                    <li>Travelling</li>
-                                                    <li>Fashion</li>
-                                                    <li>Instagram Posts</li>
-                                                    <li>Power of Social Media</li>
+                                                    <h3>63. Ikran Stan Starter Pack (ft Ikran)</h3>
+                                                    <p>On the latest episode of Made In Chafford podcast the lads are joined by Ikran! They take on:</p>
+                                                    <li>BTS</li>
+                                                    <li>The Weeknd</li>
+                                                    <li>Grammy Nominations</li>
+                                                    <li>Sainsburys Advert</li>
+                                                    <li>Funniest Moments of the Year</li>
+                                                    <li>Eastenders</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
@@ -59,14 +74,14 @@ class Home extends Component {
                                         <div className="col-6 col-12-small">
                                             <section className="box">
                                                 <div className="image featured">
-                                                    <YouTube videoId="m0rAezPD4ik" opts={{ height: '300', width: '100%' }} />
+                                                    <YouTube videoId="vLRjpGAiPi4" opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>Michigan Dunk Hi SB</h3>
-                                                    <p></p>
+                                                    <h3>Air Jordan 11 Jubilee Review</h3>
+                                                    <p>A review on the recently released Air Jordan 11 Jubilee</p>
                                                 </header>
                                                 <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=m0rAezPD4ik`} className="button solid">Watch on YouTube</a>
+                                                    <a href={`https://www.youtube.com/watch?v=vLRjpGAiPi4`} className="button solid">Watch on YouTube</a>
                                                 </footer>
                                             </section>
                                         </div>

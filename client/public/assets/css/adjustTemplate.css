@@ -204,3 +204,10 @@ select::-ms-expand {
         top: 57px;
     }
 }
+
+#intro .latestSpotifyEp {
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
