@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "nWPYgRD485I";
+        const videoId = "4h_j_ISLlS0";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -57,15 +57,13 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>63. Ikran Stan Starter Pack (ft Ikran)</h3>
-                                                    <p>On the latest episode of Made In Chafford podcast the lads take on:</p>
-                                                    <li>47th Biggest Music Podcast In The U.K.</li>
-                                                    <li>Chance The Rapper</li>
-                                                    <li>HBO Max</li>
-                                                    <li>Millwall</li>
-                                                    <li>Letitia Weight</li>
-                                                    <li>Floyd vs Logan</li>
-                                                    <li>Joshua v Pulev</li>
+                                                    <h3>65. Odd Muse (Ft. Aimee Smale)</h3>
+                                                    <p>On the latest episode of Made In Chafford podcast the lads are joined by Aimee! They take on:</p>
+                                                    <li>Creation of Odd Muse</li>
+                                                    <li>Starting Your Own Business</li>
+                                                    <li>Asos Stealing Ideas</li>
+                                                    <li>Appearing in Vogue</li>
+                                                    <li>Future Plans</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
