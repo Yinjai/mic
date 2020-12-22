@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "4h_j_ISLlS0";
+        const videoId = "BhFpcaPy-lE";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -57,13 +57,13 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>65. Odd Muse (Ft. Aimee Smale)</h3>
-                                                    <p>On the latest episode of Made In Chafford podcast the lads are joined by Aimee! They take on:</p>
-                                                    <li>Creation of Odd Muse</li>
-                                                    <li>Starting Your Own Business</li>
-                                                    <li>Asos Stealing Ideas</li>
-                                                    <li>Appearing in Vogue</li>
-                                                    <li>Future Plans</li>
+                                                    <h3>66. Real Tiers</h3>
+                                                    <p>On the latest episode of Made In Chafford podcast the lads take on:</p>
+                                                    <li>Tier 4</li>
+                                                    <li>What Superpower would you have?</li>
+                                                    <li>100m YM Catalog</li>
+                                                    <li>Marvel TV rollout</li>
+                                                    <li>Clubhouse vs Twitter</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
