@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "p4fwG_iIqyY";
+        const videoId = "svrvU-CmyTI";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -57,12 +57,14 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>68. Whole Lotta Trash (Ft. The Classic Manny)</h3>
-                                                    {/* <p>On the latest episode of Made In Chafford podcast the lads take on:</p>
-                                                    <li>MIC in 2020</li>
-                                                    <li>Moments of 2020</li>
-                                                    <li>Top 5 Albums/TV Shows</li>
-                                                    <li>2021 Predictions</li> */}
+                                                    <h3>69. Spin This Coup</h3>
+                                                    <p>On the latest episode of Made In Chafford podcast the lads take on:</p>
+                                                    <li>Coup in America</li>
+                                                    <li>Freedom of Speech</li>
+                                                    <li>WW84/Soul</li>
+                                                    <li>Chip and Bugzy</li>
+                                                    <li>NY Resolutions</li>
+                                                    <li>Buss It Challenge</li>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
