@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "svrvU-CmyTI";
+        const videoId = "_nDsd1UoVLo";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -57,14 +57,14 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>69. Spin This Coup</h3>
-                                                    <p>On the latest episode of Made In Chafford podcast the lads take on:</p>
+                                                    <h3>70. Brown Skin Girl (ft Chanel Taylor)</h3>
+                                                    {/* <p>On the latest episode of Made In Chafford podcast the lads take on:</p>
                                                     <li>Coup in America</li>
                                                     <li>Freedom of Speech</li>
                                                     <li>WW84/Soul</li>
                                                     <li>Chip and Bugzy</li>
                                                     <li>NY Resolutions</li>
-                                                    <li>Buss It Challenge</li>
+                                                    <li>Buss It Challenge</li> */}
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
