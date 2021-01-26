@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "_nDsd1UoVLo";
+        const videoId = "B3_oF6qmXcw";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -57,7 +57,7 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>70. Brown Skin Girl (ft Chanel Taylor)</h3>
+                                                    <h3>71. HMP Covid</h3>
                                                     {/* <p>On the latest episode of Made In Chafford podcast the lads take on:</p>
                                                     <li>Coup in America</li>
                                                     <li>Freedom of Speech</li>
