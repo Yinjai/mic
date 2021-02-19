@@ -6,7 +6,7 @@ import YouTube from 'react-youtube';
 class Home extends Component {
 
     render() {
-        const videoId = "kIzevIfCLBQ";
+        const videoId = "Hu8Ryw66eo0";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -57,7 +57,7 @@ class Home extends Component {
                                                     <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
                                                 </div>
                                                 <header>
-                                                    <h3>73. Fear Of God (Ft Yxng Lacoste)</h3>
+                                                    <h3>74. Love & Time</h3>
                                                 </header>
                                                 <footer className="blockLinks">
                                                     <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
