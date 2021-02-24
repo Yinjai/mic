@@ -6,7 +6,7 @@ import Pagination from '../components/Pagination';
 
 function PodcastFeed(props) {
     const count = 30
-    const corsUrl = `https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Ffeeds.soundcloud.com%2Fusers%2Fsoundcloud%3Ausers%3A153165239%2Fsounds.rss&api_key=${process.env.REACT_APP_RSSAPI}&count=${count}`;
+    const corsUrl = `https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Ffeeds.megaphone.fm%2FWIZ1272549635&api_key=${process.env.REACT_APP_RSSAPI}&count=${count}`;
     const [initialised, setInitialised] = useState(false);
     const [listings, setListings] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -33,7 +33,7 @@ function PodcastFeed(props) {
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
     if (props.variant === "single") {
-        const episodeInfo = listings.filter(listings => listings.guid.split('tracks/').pop() === props.episodeId);
+        const episodeInfo = listings.filter(listings => listings.enclosure.link.split('https://traffic.megaphone.fm/').pop().slice(0, -4) === props.episodeId);
         return (
             episodeInfo.map((l, i) => {
                 return (
@@ -55,7 +55,7 @@ function PodcastFeed(props) {
                     currentPosts.map((l, i) => {
                         return (
                             <PodBlock
-                                index={l.guid.split('tracks/').pop()}
+                                index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().slice(0, -4)}
                                 key={i}
                                 title={l.title}
                                 description={l.description}
@@ -76,7 +76,7 @@ function PodcastFeed(props) {
             listings.slice(0, 6).map((l, i) => {
                 return (
                     <PodBlock
-                        index={l.guid.split('tracks/').pop()}
+                        index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().slice(0, -4)}
                         key={i}
                         title={l.title}
                         description={l.description}

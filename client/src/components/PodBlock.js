@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 class PodBlock extends Component {
 
     render() {
-        return(
+        return (
             <div className="col-4 col-6-medium col-12-small">
                 <section className="box">
-                    <Link className="image featured" to={{pathname:`/episode/${this.props.index}`, index: this.props.index}}>
-                        <img src={this.props.thumbnail.replace('http', 'https')} alt="" />
+                    <Link className="image featured" to={{ pathname: `/episode/${this.props.index}`, index: this.props.index }}>
+                        <img src={this.props.thumbnail} alt="" />
                     </Link>
                     <header>
                         <h3>{this.props.title}</h3>
@@ -17,7 +17,7 @@ class PodBlock extends Component {
 
                     <p>{this.props.description}</p>
                     <footer className="blockLinks">
-                        <Link className="button alt" to={{pathname:`/episode/${this.props.index}`, index: this.props.index}} >Listen Now</Link>
+                        <Link className="button alt" to={{ pathname: `/episode/${this.props.index}`, index: this.props.index }} >Listen Now</Link>
                     </footer>
                 </section>
             </div>

@@ -211,3 +211,7 @@ select::-ms-expand {
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
+iframe {
+    overflow: hidden;
+}

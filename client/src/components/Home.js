@@ -24,12 +24,13 @@ class Home extends Component {
                             </header>
                             <iframe
                                 title="spotifyframe"
-                                src="https://open.spotify.com/embed-podcast/show/3WH7F5Br5i9AQGSugnlDHF"
+                                src="https://playlist.megaphone.fm/?p=WIZ1272549635&episodes=1"
                                 width="100%"
-                                height="160"
-                                frameborder="0"
+                                height="200"
+                                frameBorder="0"
                                 allowtransparency="true"
-                                allow="encrypted-media">
+                                allow="encrypted-media"
+                                scrolling="no">
                             </iframe>
                         </section>
                         <div className="row">
