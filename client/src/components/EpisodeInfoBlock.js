@@ -6,7 +6,7 @@ class EpisodeInfoBlock extends Component {
     render() {
         return (
             <div>
-                <img className="episodeThumbnail" src={this.props.thumbnail.replace('http', 'https')} alt="" />
+                <img className="episodeThumbnail" src={this.props.thumbnail} alt="" />
                 <section>
                     <header>
                         <h3>Episode {this.props.title}</h3>
