@@ -18,7 +18,6 @@ function PodcastFeed(props) {
                 try {
                     const response = await axios.get(corsUrl)
                     setListings(response.data.items);
-                    console.log(response.data.items)
                 } catch (ex) {
                     console.log(ex);
                 }
@@ -34,9 +33,8 @@ function PodcastFeed(props) {
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
     if (props.variant === "single") {
-        console.log(props.episodeId)
         const episodeInfo = listings.filter(listings => listings.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0] === props.episodeId);
-        console.log(episodeInfo)
+        console.log(episodeInfo);
         return (
             episodeInfo.map((l, i) => {
                 return (

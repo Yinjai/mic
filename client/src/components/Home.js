@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import IntroBlock from './IntroBlock.js';
 import Episodes from './Episodes.js';
-
 import YouTube from 'react-youtube';
+import YouTubeFeed from '../functional/YouTubeFeed.js';
+
 class Home extends Component {
 
     render() {
-        const videoId = "3aZfvv7sl-U";
         return (
             <div>
                 <section id="header" className="headerNoPadding">
@@ -53,17 +53,7 @@ class Home extends Component {
                                     </header>
                                     <div className="row">
                                         <div className="col-6 col-12-small">
-                                            <section className="box">
-                                                <div className="image featured">
-                                                    <YouTube videoId={videoId} opts={{ height: '300', width: '100%' }} />
-                                                </div>
-                                                <header>
-                                                    <h3>80. Panthera Leo Beauty ft Chaima</h3>
-                                                </header>
-                                                <footer className="blockLinks">
-                                                    <a href={`https://www.youtube.com/watch?v=${videoId}`} className="button solid">Watch on YouTube</a>
-                                                </footer>
-                                            </section>
+                                            <YouTubeFeed />
                                         </div>
                                         <div className="col-6 col-12-small">
                                             <section className="box">
