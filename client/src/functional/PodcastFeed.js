@@ -18,6 +18,7 @@ function PodcastFeed(props) {
                 try {
                     const response = await axios.get(corsUrl)
                     setListings(response.data.items);
+                    console.log(response.data.items)
                 } catch (ex) {
                     console.log(ex);
                 }
@@ -33,7 +34,9 @@ function PodcastFeed(props) {
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
     if (props.variant === "single") {
-        const episodeInfo = listings.filter(listings => listings.enclosure.link.split('https://traffic.megaphone.fm/').pop().slice(0, -4) === props.episodeId);
+        console.log(props.episodeId)
+        const episodeInfo = listings.filter(listings => listings.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0] === props.episodeId);
+        console.log(episodeInfo)
         return (
             episodeInfo.map((l, i) => {
                 return (
@@ -55,7 +58,7 @@ function PodcastFeed(props) {
                     currentPosts.map((l, i) => {
                         return (
                             <PodBlock
-                                index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().slice(0, -4)}
+                                index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0]}
                                 key={i}
                                 title={l.title}
                                 description={l.description}
@@ -76,7 +79,7 @@ function PodcastFeed(props) {
             listings.slice(0, 6).map((l, i) => {
                 return (
                     <PodBlock
-                        index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().slice(0, -4)}
+                        index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0]}
                         key={i}
                         title={l.title}
                         description={l.description}

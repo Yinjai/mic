@@ -8,7 +8,7 @@ class About extends Component {
             <section id="main">
                 <div className="container">
                     <article className="box post">
-                        <a href="#" className="image featured"><img src="/images/about.png" alt="" /></a>
+                        <a className="image featured"><img src="/images/about.png" alt="" /></a>
                         <header>
                             <h3>About us</h3>
                         </header>
