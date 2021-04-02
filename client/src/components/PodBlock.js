@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 class PodBlock extends Component {
 
     render() {
-        const title = this.props.title.replace('&amp;', '&');
-        const description = this.props.description.replace('&amp;', '&');
+        const title = this.props.title.replace(/&amp;/g, '&');
+        const description = this.props.description.replace(/&amp;/g, '&');
         return (
             <div className="col-4 col-6-medium col-12-small">
                 <section className="box">

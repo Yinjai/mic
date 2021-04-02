@@ -4,8 +4,8 @@ import SoundCloudBlock from './SoundCloudBlock.js';
 class EpisodeInfoBlock extends Component {
 
     render() {
-        const title = this.props.title.replace('&amp;', '&');
-        const description = this.props.description.replace('&amp;', '&');
+        const title = this.props.title.replace(/&amp;/g, '&');
+        const description = this.props.description.replace(/&amp;/g, '&');
         return (
             <div>
                 <img className="episodeThumbnail" src={this.props.thumbnail} alt="" />
