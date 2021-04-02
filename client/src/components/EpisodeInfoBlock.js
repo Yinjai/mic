@@ -4,15 +4,17 @@ import SoundCloudBlock from './SoundCloudBlock.js';
 class EpisodeInfoBlock extends Component {
 
     render() {
+        const title = this.props.title.replace('&amp;', '&');
+        const description = this.props.description.replace('&amp;', '&');
         return (
             <div>
                 <img className="episodeThumbnail" src={this.props.thumbnail} alt="" />
                 <section>
                     <header>
-                        <h3>Episode {this.props.title}</h3>
+                        <h3>Episode {title}</h3>
                     </header>
                     <p>{this.props.pubDate.split(' ').shift()}</p>
-                    <p>{this.props.description}</p>
+                    <p>{description}</p>
                     <p>
                         Made in Chafford <a href="https://twitter.com/madeinchafford">Twitter</a> & <a href="https://www.instagram.com/madeinchafford/">Instagram</a>
                     </p>

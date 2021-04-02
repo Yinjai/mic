@@ -34,7 +34,6 @@ function PodcastFeed(props) {
 
     if (props.variant === "single") {
         const episodeInfo = listings.filter(listings => listings.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0] === props.episodeId);
-        console.log(episodeInfo);
         return (
             episodeInfo.map((l, i) => {
                 return (
