@@ -33,7 +33,8 @@ function PodcastFeed(props) {
     const paginate = pageNumber => setCurrentPage(pageNumber);
 
     if (props.variant === "single") {
-        const episodeInfo = listings.filter(listings => listings.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0] === props.episodeId);
+        const episodeInfo = listings.filter(listings => listings.enclosure.link.split('https://chrt.fm/track/23D3/traffic.megaphone.fm/').pop().split('.')[0] === props.episodeId);
+        console.log(listings[0])
         return (
             episodeInfo.map((l, i) => {
                 return (
@@ -55,7 +56,7 @@ function PodcastFeed(props) {
                     currentPosts.map((l, i) => {
                         return (
                             <PodBlock
-                                index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0]}
+                                index={l.enclosure.link.split('https://chrt.fm/track/23D3/traffic.megaphone.fm/').pop().split('.')[0]}
                                 key={i}
                                 title={l.title}
                                 description={l.description}
@@ -76,7 +77,7 @@ function PodcastFeed(props) {
             listings.slice(0, 6).map((l, i) => {
                 return (
                     <PodBlock
-                        index={l.enclosure.link.split('https://traffic.megaphone.fm/').pop().split('.')[0]}
+                        index={l.enclosure.link.split('https://chrt.fm/track/23D3/traffic.megaphone.fm/').pop().split('.')[0]}
                         key={i}
                         title={l.title}
                         description={l.description}
